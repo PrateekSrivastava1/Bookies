@@ -12,6 +12,7 @@ function Subtotal() {
         renderText={(value) => (
           <>
             <p>
+            {/* console.log(value); */}
               Subtotal ({cart.length} items): <strong>{value}</strong>
             </p>
             <small className="subtotal_gift">

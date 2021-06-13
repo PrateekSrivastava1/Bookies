@@ -18,6 +18,8 @@
     object-fit: contain;
     margin: 0 20px;
     margin-top: 18px;
+    border: 1px #131921 solid;
+    /* height: 40px; */
 }
 
 .header_searchIcon{
@@ -81,6 +83,10 @@
 }
 
 .header_optionBasket:hover{
+    border-color: white;
+}
+
+.header_logo:hover{
     border-color: white;
 }
 
