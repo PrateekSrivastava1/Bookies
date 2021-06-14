@@ -56,6 +56,7 @@
 
 .product > button:hover {
     background-color: rgb(209, 146, 28); 
+    cursor: pointer;
   }
 
 .product_info{

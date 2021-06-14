@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.signin {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px black solid;
+  /* width: 100px; */
+}
+.amazon_logo {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  object-fit: contain;
+  width: 110px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.signin_form {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signin_form {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.signin_form > form > h5 {
+  margin-bottom: 5px;
+}
+.signin_form > h1 {
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.signin_form > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  width: 100%;
+  outline: none;
+  transition: .3s;
+  border: 1px solid rgb(190, 184, 184);
+  border-radius: 3px;
+}
+.signin_form > form > input:focus{
+  border-color: rgb(250, 157, 8);
+  box-shadow: 0 0 16px 0 rgb(180, 126, 24);
+  
+}
+.signin_form > p {
+  margin-top: 15px;
+  font-size: 12px !important;
+}
+
+.signin_continueButton {
+  background: orange;
+  border-radius: 10px;
+  height: 30px;
+  width: 100%;
+  border: 1px rgb(156, 105, 11) solid;
+  margin-top: 10px;
+  color: black;
+}
+
+.signin_form > button:hover {
+  background-color: rgb(209, 146, 28);
+}
+
+.signin_createUser {
+  width: 300px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.signin_newUserButton {
+  background: rgb(190, 189, 187);
+  border-radius: 10px;
+  height: 30px;
+  width: 100%;
+  border: 1px rgb(151, 150, 147) solid;
+  margin-top: 10px;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* .signin > button:hover {
+
+} */
+button.signin_continueButton:hover {
+  background-color: rgb(209, 146, 28);
+  cursor: pointer;
+}
+button.signin_newUserButton:hover {
+  background-color: rgb(151, 150, 147);
+  cursor: pointer;
+}
