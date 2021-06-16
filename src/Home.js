@@ -13,14 +13,14 @@ function Home() {
         <div className="home_row">
           <Product
             id="1"
-            title="Careview Non-Woven Reuseable Fabric N95 Mask (White, Without Valve, Pack of 10) for Unisex"
+            title="Careview Non-Woven Reuseable Fabric N95 Mask (White, Pack of 10)"
             price={832}
             image="https://images-na.ssl-images-amazon.com/images/I/61WF3gkx8bL._SL1080_.jpg"
             rating={5}
           />
           <Product
             id="2"
-            title="LG 235 L 4 Star Inverter Direct-Cool Single Door Refrigerator (GL-D241ASCY, Scarlet Charm, Base stand with Drawer)"
+            title="LG 235 L 4 Star Inverter Direct-Cool Single Door Refrigerator"
             price={19990}
             image="https://images-na.ssl-images-amazon.com/images/I/71g6DgrFQJL._SL1500_.jpg"
             rating={3}

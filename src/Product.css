@@ -37,13 +37,6 @@
     z-index: 1;
 }
 
-/* .product:hover .image{
-    max-height: 400px;
-    max-width: 400px;
-}
- */
-
-
 .product > button{
     display: flex;
     background: orange;
@@ -57,7 +50,7 @@
 .product > button:hover {
     background-color: rgb(209, 146, 28); 
     cursor: pointer;
-  }
+}
 
 .product_info{
     height: 100px;

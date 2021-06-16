@@ -4,7 +4,7 @@ import { useStateValue } from "./StateProvider";
 import Subtotal from "./Subtotal";
 import CartItems from "./CartItems";
 function Cart() {
-  const [{ cart }, setCart] = useStateValue();
+  const [{ cart, user }, setCart] = useStateValue();
 
   return (
     <div className="cart">

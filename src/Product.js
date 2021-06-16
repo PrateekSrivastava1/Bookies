@@ -4,7 +4,6 @@ import "./Product.css";
 import { useStateValue } from "./StateProvider";
 function Product({ id, title, image, price, rating }) {
  const [{cart}, setCart] = useStateValue();
- console.log("this is new item-> ", cart);
  const addToCart = () => {
   setCart({
     type: "ADD_TO_CART",
@@ -17,8 +16,9 @@ function Product({ id, title, image, price, rating }) {
     },
   });
  };
- 
+
   return (
+    <>
     <div className="product">
       <div className="product_info">
         <p>{title}</p>
@@ -34,7 +34,6 @@ function Product({ id, title, image, price, rating }) {
             ))}
         </div>
       </div>
-
       <img
       className="image"
         src={image}
@@ -42,6 +41,7 @@ function Product({ id, title, image, price, rating }) {
       />
       <button onClick={addToCart} >Add to cart</button>
     </div>
+    </>
   );
 }
 
