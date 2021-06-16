@@ -5,17 +5,18 @@ import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import { Link } from "react-router-dom";
 import { useStateValue } from "./StateProvider";
 import { auth } from "./firebase";
+import { getTotalAmount } from "./Reducer";
+import CurrencyFormat from "react-currency-format";
 
 function Header() {
+  const [{ cart, user }, setCart] = useStateValue();
 
-  const [{cart, user}, setCart] = useStateValue();
-  
   const signout = () => {
-    if(user){
+    if (user) {
       auth.signOut();
     }
-  }
-  
+  };
+
   return (
     <div className="header">
       <Link to="/">
@@ -32,24 +33,41 @@ function Header() {
 
       <div className="header_nav">
         <Link to={user == null && "/signin"}>
-        <div onClick={signout} className="header_option">
-        {/* String name = user.getDisplayName(); */}
-          <span className="header_option1">Hello {!user? "Stalker" : "User"} !</span>
-          <span className="header_option2">{user ? "Sign Out" : "Sign In"}</span>
-        </div>
+          <div onClick={signout} className="header_option">
+            {/* String name = user.getDisplayName(); */}
+            <span className="header_option1">
+              Hello {!user ? "Stalker" : "User"} !
+            </span>
+            <span className="header_option2">
+              {user ? "Sign Out" : "Sign In"}
+            </span>
+          </div>
         </Link>
         <div className="header_option">
           <span className="header_option1">Returns</span>
           <span className="header_option2">& Orders</span>
         </div>
         <div className="header_option">
-          <span className="header_option1">your</span>
-          <span className="header_option2">prime</span>
+          <span className="header_option1">CR</span>
+          <CurrencyFormat
+            renderText={(value) => (
+              <span className="header_option2">
+                <strong>{value}</strong>
+              </span>
+            )}
+            decimalScale={2}
+            value={getTotalAmount(cart)}
+            displayType={"text"}
+            thousandSeparator={true}
+            prefix={"₹"}
+          />
         </div>
         <Link to="/cart">
           <div className="header_optionBasket">
             <ShoppingCartIcon />
-            <span className="header_option2 header_basketCount">{cart?.length}</span>
+            <span className="header_option2 header_basketCount">
+              {cart?.length}
+            </span>
           </div>
         </Link>
       </div>

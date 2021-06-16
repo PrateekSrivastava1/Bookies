@@ -5,7 +5,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { StateProvider } from "./StateProvider";
 import Reducer, {initialState} from "./Reducer";
+import { loadStripe } from "@stripe/stripe-js";
 ReactDOM.render(
+
   <React.StrictMode>
     <StateProvider initialState={initialState} reducer={Reducer}>
       <App />
