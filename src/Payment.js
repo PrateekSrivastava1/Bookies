@@ -8,16 +8,31 @@ import { getTotalAmount } from "./Reducer";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useEffect } from "react";
 import axios from "./axios";
+import { auth, db } from "./firebase";
 function Payment() {
   const [{ cart, user }, setCart] = useStateValue();
-
   const stripe = useStripe();
   const elements = useElements();
+  const history = useHistory();
   const [error, setError] = useState(null);
   const [disabled, setDisabled] = useState(true);
   const [processing, setProcessing] = useState("");
-  const [enabled, setEnabled] = useState(true);
+  const [enabled, setEnabled] = useState(false);
   const [userSecret, setUserSecret] = useState(true);
+
+  useEffect(() => {
+    const getSecret = async () => {
+      const response = await axios({
+        method: "post",
+        url: `/payments/create?total=${getTotalAmount(cart) * 100} `,
+      });
+      setUserSecret(response.data.userSecret);
+    };
+    getSecret();
+  }, [cart]);
+
+  console.log("this userSecret is =>>>>", userSecret);
+
   const payment = async (event) => {
     event.preventDefault();
     setProcessing(true);
@@ -27,11 +42,27 @@ function Payment() {
           card: elements.getElement(CardElement),
         },
       })
-      .then(({ paymetIntend }) => {
+      .then(({ paymentIntent }) => {
+        db
+          .collection("Customer")
+          .doc(user?.uid)
+          .collection("orders")
+          .doc(paymentIntent.id)
+          .set({
+            cart: cart,
+            amount: paymentIntent.amount,
+            created: paymentIntent.created,
+          });
+
         setEnabled(true);
         setError(null);
-        setProcessing(true);
-        useHistory.replace("/orders");
+        setProcessing(false);
+
+        setCart({
+          type: "EMPTY_CART",
+        });
+
+        history.replace("/orders");
       });
   };
 
@@ -39,19 +70,6 @@ function Payment() {
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
-
-  useEffect(() => {
-    const getSecret = async () => {
-      const secret = await axios({
-        method: "post",
-        url: `/payments/create?total=${getTotalAmount(cart) * 100} `,
-      });
-      setUserSecret(secret.data.userSecret);
-    };
-    getSecret();
-  }, [cart])
-
-  console.log("useSecret: ", userSecret);
 
   return (
     <div className="payment">
@@ -76,6 +94,7 @@ function Payment() {
           <div className="cartProductPaymentItems">
             {cart.map((i) => (
               <CartItems
+                key={i.id}
                 id={i.id}
                 title={i.title}
                 image={i.image}

@@ -1,7 +1,7 @@
 import React from "react";
 import "./CartItems.css";
 import { useStateValue } from "./StateProvider";
-function CartItems({ id, title, image, price, rating }) {
+function CartItems({ key, id, title, image, price, rating }) {
   
   const [{cart}, setCart] = useStateValue();
  

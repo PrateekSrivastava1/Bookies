@@ -13,6 +13,7 @@ function Cart() {
           <h2 className="cart_heading">Shopping Cart</h2>
           {cart.map((item) => (
             <CartItems
+              key={item.id}
               id={item.id}
               title={item.title}
               image={item.image}

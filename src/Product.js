@@ -2,12 +2,13 @@ import React from "react";
 import "./Product.css";
 // import { useState } from "react";
 import { useStateValue } from "./StateProvider";
-function Product({ id, title, image, price, rating }) {
+function Product({ key, id, title, image, price, rating }) {
  const [{cart}, setCart] = useStateValue();
  const addToCart = () => {
   setCart({
     type: "ADD_TO_CART",
     item: {
+      key: id,
       id: id,
       title: title,
       image: image,
