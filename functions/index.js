@@ -8,18 +8,18 @@ const stripe = require("stripe")(
 const app = express();
 app.use(cors({ origin: true }));
 app.use(express.json());
-app.get("/", (req, res) => res.status(200).send("perfect"))
+app.get("/", (req, res) => res.status(200).send("perfect"));
 
 app.post("/payments/create", async (req, res) => {
   const total = req.query.total;
-  console.log("payment received =>>> ", total)
+  // console.log("payment received =>>> ", total)
   const paymentIntent = await stripe.paymentIntents.create({
     amount: total,
     currency: "INR",
   });
   res.status(201).send({
     userSecret: paymentIntent.client_secret,
-  })
-})
+  });
+});
 
-exports.api = functions.https.onRequest(app)
+exports.api = functions.https.onRequest(app);
