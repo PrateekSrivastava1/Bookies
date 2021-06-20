@@ -4,7 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
-
+src/Card.js
+src/Nav.css
+src/Nav.js
+src/card.css
 # testing
 /coverage
 

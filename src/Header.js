@@ -43,10 +43,12 @@ function Header() {
             </span>
           </div>
         </Link>
+        <Link to={user != null && "/orders"}>
         <div className="header_option">
           <span className="header_option1">Returns</span>
           <span className="header_option2">& Orders</span>
         </div>
+        </Link>
         <div className="header_option">
           <span className="header_option1">CR</span>
           <CurrencyFormat
