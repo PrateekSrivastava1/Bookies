@@ -21,7 +21,9 @@
   border: 1px #131921 solid;
   /* height: 40px; */
 }
-
+.logo:hover {
+  color: #45f315;
+}
 .header_searchIcon {
   padding: 5px;
   height: 22px !important;
@@ -46,7 +48,7 @@
   border: 1px #131921 solid;
   color: white;
 }
-.header_nav > a{
+.header_nav > a {
   text-decoration: none;
 }
 .header_option:hover {
@@ -96,4 +98,10 @@
 .header_basketCount {
   margin: 10px 10px;
   color: orange;
+}
+.button {
+  color: rgb(0, 183, 255);
+}
+.button:hover {
+  color: #45f315;
 }

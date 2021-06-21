@@ -7,28 +7,60 @@ function Cart() {
   const [{ cart, user }, setCart] = useStateValue();
 
   return (
-    <div className="cart">
-      <div className="cart_left">
-        <div>
-          <h2 className="cart_heading">Shopping Cart</h2>
-          {cart.map((item) => (
-            <CartItems
-              key={item.id}
-              id={item.id}
-              title={item.title}
-              image={item.image}
-              price={item.price}
-              rating={item.rating}
-            />
-          ))}
+    <>
+      {/* <div className="cart">
+        <div className="cart_left">
+          <div>
+            <h2 className="cart_heading">Shopping Cart</h2>
+            {cart.map((item) => (
+              <CartItems
+                key={item.id}
+                id={item.id}
+                title={item.title}
+                image={item.image}
+                price={item.price}
+                rating={item.rating}
+              />
+            ))}
+          </div>
         </div>
-      </div>
-      <div className="cart_right">
+        <div className="cart_right">
         <div className="subtotal">
           <Subtotal />
         </div>
       </div>
-    </div>
+      </div> */}
+      <div className="smallContainer cartPage">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <div>
+              {/* <h2 className="cart_heading">Shopping Cart</h2> */}
+              {cart.map((item) => (
+                <CartItems
+                  key={item.id}
+                  id={item.id}
+                  title={item.title}
+                  image={item.image}
+                  price={item.price}
+                  rating={item.rating}
+                />
+              ))}
+            </div>
+          </tr>
+        </table>
+        <div className="totalPrice">
+          <table>
+            <tr>
+              <Subtotal />
+            </tr>
+          </table>
+        </div>
+      </div>
+    </>
   );
 }
 

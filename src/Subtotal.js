@@ -18,10 +18,6 @@ function Subtotal() {
             {/* console.log(value); */}
               Subtotal ({cart.length} items): <strong>{value}</strong>
             </p>
-            <small className="subtotal_gift">
-              <input type="checkbox" />
-              This order contains a gift
-            </small>
           </>
         )}
         decimalScale={2}
@@ -30,7 +26,7 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"₹"}
       />
-      <button onClick={event => history.push("/payment")} >Proceed to Buy</button>
+      <button onClick={event => history.push("/payment")} >Buy</button>
     </div>
   );
 }

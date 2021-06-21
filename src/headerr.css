@@ -1,0 +1,71 @@
+/* @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap'); */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans Narrow', sans-serif;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand{
+    font-size: 2.25rem;
+    color: #0096db  !important;;
+}
+
+.navbar a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+.bb{
+    /* font-size: 35px !important; */
+    font-size:2.25rem;
+}
+
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid #483ff8;
+}
+
+.navbar a:hover{
+    color: #3498db;
+}
+
+#header{
+    width: 100%;
+    height: 80%;
+    margin-top: 70px;
+}
+
+#header h1{
+    margin: 0, 0, 10px, 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: black;
+}
+
+#header .brand-name{
+    color: #63db00;
+}
+
+.btn{
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+@media (max-width: 991px) {
+    .navbar-brand{
+        font-size: 1.5rem;
+    }
+    .menu_active{
+        font-weight: bold;
+        border-bottom: none;
+    }
+}

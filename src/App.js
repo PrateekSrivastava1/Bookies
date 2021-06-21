@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Cart from "./Cart";
 import SignIn from "./SignIn";
 import { useEffect } from "react";
@@ -12,6 +12,10 @@ import Payment from "./Payment";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders";
+import TestCart from "./TestCart";
+import Firstwindow from "./Firstwindow";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
 const promise = loadStripe(
   "pk_test_51J2xnJSF9T1v6nUZNUFLctUiiNQSGoZpYg8OIIUyuqUINVOiV9ZtLLOgSbmY8zn5bEIApAniuDPYJ5zIakjaCiJE00U8UqazMS"
 );
@@ -30,36 +34,43 @@ function App() {
         setUser({
           type: "SET_USER",
           user: null,
-        })
+        });
       }
-    })
-  }, [])
+    });
+  }, []);
 
   return (
     <Router>
       <div className="app">
         <Switch>
-          <Route path="/signin">
+          <Route exact path="/signin">
             <SignIn />
           </Route>
-          <Route path="/cart">
+          <Route exact path="/testCart">
+            <TestCart />
+          </Route>
+          <Route exact path="/check">
+            <Firstwindow />
+          </Route>
+          <Route exact path="/cart">
             <Header />
             <Cart />
           </Route>
-          <Route path="/payment">
+          <Route exact path="/payment">
             <Header />
-            <Elements stripe={promise} >
+            <Elements stripe={promise}>
               <Payment />
             </Elements>
           </Route>
-          <Route path="/orders">
+          <Route exact path="/orders">
             <Header />
             <Orders />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Header />
             <Home />
           </Route>
+          <Redirect to="/" />
         </Switch>
       </div>
     </Router>
