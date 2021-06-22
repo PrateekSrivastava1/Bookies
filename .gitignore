@@ -8,6 +8,7 @@ src/Card.js
 src/Nav.css
 src/Nav.js
 src/card.css
+src/axios.js 
 # testing
 /coverage
 
