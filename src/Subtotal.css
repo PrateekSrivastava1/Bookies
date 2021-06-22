@@ -6,33 +6,23 @@
   justify-content: space-between;
   width: 300px;
   height: 100px;
-  /* padding: 20px; */
   background-color: white;
   margin-top: 50px;
   border-radius: 3px;
   padding: 1px 0 10px 0;
   margin-bottom: 20x;
-  /* box-sizing: border-box; */
-  /* z-index: 1; */
-}
-.subtotal_gift {
-  display: flex;
-  align-items: center;
-  /* padding-top: 10px; */
-}
-.subtotal_gift > input {
-  margin-right: 5px;
 }
 .subtotal > button {
-  background: orange;
-  border-radius: 10px;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 15px;
   height: 30px;
   width: 100%;
-  border: 1px rgb(156, 105, 11) solid;
+  border: 1px rgb(28, 100, 209) solid;
   margin-top: 10px;
   color: black;
 }
 .subtotal > button:hover {
-  background-color: rgb(209, 146, 28);
+  background-color: rgb(28, 100, 209);
   cursor: pointer;
+  color: white
 }

@@ -3,6 +3,8 @@ import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { auth } from "./firebase";
 import "./SignIn.css";
+import TextField from "@material-ui/core/TextField";
+import InputAdornment from "@material-ui/core/InputAdornment";
 function SignIn() {
   const history = useHistory();
   const [email, setEmail] = useState("");
@@ -11,11 +13,11 @@ function SignIn() {
   const signIn = (event) => {
     event.preventDefault();
     auth
-        .signInWithEmailAndPassword(email, password)
-        .then((auth) => {
-            history.push("/");
-        })
-        .catch((error) => alert(error.message));
+      .signInWithEmailAndPassword(email, password)
+      .then((auth) => {
+        history.push("/");
+      })
+      .catch((error) => alert(error.message));
   };
 
   const register = (event) => {
@@ -32,50 +34,83 @@ function SignIn() {
   };
 
   return (
-    <div>
-      <div className="signin">
-        <Link to="/">
-          <img
-            className="amazon_logo"
-            src="https://pngimg.com/uploads/amazon/amazon_PNG21.png"
-            alt=""
-          />
-        </Link>
-        <div className="signin_form">
-          <h1>Sign-In</h1>
-          <form action="">
-            <h5>Email</h5>
-            <input
-              type="text"
-              value={email}
-              onChange={(event) => setEmail(event.target.value)}
-            />
-            <h5>Password</h5>
-            <input
-              type="password"
-              value={password}
-              onChange={(event) => setPassword(event.target.value)}
-            />
-            <button
-              onClick={signIn}
-              className="signin_continueButton"
-              type="submit"
-            >
-              Continue
-            </button>
-          </form>
-          <p>
-            By continuing, you agree to Amazon's Conditions of Use and Privacy
-            Notice.
-          </p>
-        </div>
-        <div className="signin_createUser">
-          <button onClick={register} className="signin_newUserButton">
-            Create your Amazon account
-          </button>
-        </div>
+    <>
+      {/* https://i.ibb.co/KxSpZLm/unlock.png */}
+      <div className="body">
+        <section className="Form my-4 mx-5">
+          <div className="container cont">
+            <div className="row no-gutters ">
+              <div className="col-lg-5 ">
+                <img
+                  className="image"
+                  src="https://i.ibb.co/KxSpZLm/unlock.png"
+                  alt=""
+                />
+              </div>
+              <div className="col-lg-7 px-5">
+                <form className="text-center">
+                  <div className="form-row">
+                    <div className="col-lg-7">
+                      <TextField
+                        className="form-control my-3 p-3"
+                        // label="With a grid"
+                        id="standard-start-adornment"
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              Email:
+                            </InputAdornment>
+                          ),
+                        }}
+                        value={email}
+                        onChange={(event) => setEmail(event.target.value)}
+                      />
+                    </div>
+                  </div>
+                  <div className="form-row">
+                    <div className="col-lg-7">
+                      <TextField
+                        className="form-control my-3 p-3"
+                        id="standard-basic"
+                        // label="With a grid"
+                        id="standard-start-adornment"
+                        InputProps={{
+                          startAdornment: (
+                            <InputAdornment position="start">
+                              Password:
+                            </InputAdornment>
+                          ),
+                        }}
+                        value={password}
+                        onChange={(event) => setPassword(event.target.value)}
+                      />
+                    </div>
+                  </div>
+                  <div className="form-row">
+                    <div className="col-lg-7">
+                      <button
+                        type="button"
+                        className="btn btn-outline-primary "
+                        onClick={signIn}
+                      >
+                        Sign In
+                      </button>
+                      <button
+                        type="button"
+                        className="btn btn-outline-primary m-3"
+                        onClick={register}
+                      >
+                        Sign Up
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-    </div>
+    </>
   );
 }
 

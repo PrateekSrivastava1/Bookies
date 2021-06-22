@@ -67,39 +67,36 @@ function Home() {
               rating={5}
             />
           </div>
-          {/* <div className="home_row row_repeat no">
-            <Product
-              key="5"
-              id="5"
-              title=""
-              price={1}
-              image="https://i.ibb.co/qdxd6V1/fathers-day.jpg"
-              rating={1}
-            />
-          </div> */}
           <div className="home_row">
             <Product
               key="6"
               id="6"
-              title="OnePlus Smart Band: 13 Exercise Modes, Blood Oxygen Saturation (SpO2), Heart Rate & Sleep Tracking, 5ATM+Water & Dust Resistant(Android & iOS Compatible)"
-              price={2499}
-              image="https://images-na.ssl-images-amazon.com/images/I/61XPTRJZcCL._SL1500_.jpg"
+              title="Dynamic Programming Coding interviews"
+              price={0}
+              download={
+                "https://drive.google.com/file/d/1BBS1PpmpoamYCj8KZ4o_hkskVh7QtvtJ/view?usp=sharing"
+              }
+              image="https://images-na.ssl-images-amazon.com/images/I/81io-ZZJjEL.jpg"
               rating={4}
             />
             <Product
               key="7"
               id="7"
-              title="Mi Smart Band 5 – India’s No. 1 Fitness Band, 1.1-inch AMOLED Color Display, Magnetic Charging, 2 Weeks Battery Life, Personal Activity Intelligence (PAI), Women’s Health Tracking"
-              price={2499}
-              image="https://images-na.ssl-images-amazon.com/images/I/719ZywAmvOL._SL1500_.jpg"
+              title="Effective Java"
+              price={0}
+              download="https://drive.google.com/file/d/1qk2jQ7o-_BcmJ7UaD9zDrYpiyZZqYqOM/view?usp=sharing"
+              image="https://m.media-amazon.com/images/I/51wl8cINKYL.jpg"
               rating={4}
             />
             <Product
               key="8"
               id="8"
-              title="(Renewed) MI 5ATM 5 Smart Band (Black, 2 Weeks Battery Life)"
-              price={2199}
-              image="https://images-na.ssl-images-amazon.com/images/I/31x-J%2BtVmgS.jpg"
+              title="THE Algorithm Design MANUAL"
+              price={0}
+              image="https://images-na.ssl-images-amazon.com/images/I/61ExhOMbJLL.jpg"
+              download={
+                "https://drive.google.com/file/d/1LAL-9Oet_ydv647cHJWw8h3UcN3LaWMH/view?usp=sharing"
+              }
               rating={4}
             />
           </div>
@@ -107,52 +104,154 @@ function Home() {
             <Product
               key="9"
               id="9"
-              title="boAt Stone 200 3W Bluetooth Speaker(Orange)"
-              price={999}
-              image="https://images-na.ssl-images-amazon.com/images/I/814bMyDCONL._SL1500_.jpg"
+              title="SQL Cookbook"
+              price={0}
+              image="https://images-na.ssl-images-amazon.com/images/I/919N5M6kIeL.jpg"
+              download={
+                "https://drive.google.com/file/d/1D19aCg2wg9ne4c4pUhyY2GFtfWi8slB-/view?usp=sharing"
+              }
               rating={4}
             />
             <Product
               key="10"
               id="10"
-              title="boAt Stone 650 10W Bluetooth Speaker(Red)"
-              price={1299}
-              image="https://images-na.ssl-images-amazon.com/images/I/71u53d%2BHJ-L._SL1500_.jpg"
+              title="Python Crash Course"
+              price={0}
+              image="https://images-na.ssl-images-amazon.com/images/I/81vmJCNCm6L.jpg"
+              download={
+                "https://drive.google.com/file/d/1d0YrY5b8xV1XhooKvSmj4SlloJMA9vY6/view?usp=sharing"
+              }
               rating={5}
             />
-          </div>
-
-          {/* <div className="home_row row_repeat no">
             <Product
               key="11"
               id="11"
-              title=""
-              price={1}
-              image="https://i.ibb.co/W30zdXZ/wfh.jpg"
-              rating={1}
+              title="Pro Git"
+              price={0}
+              image="https://git-scm.com/images/progit2.png"
+              download={
+                "https://drive.google.com/file/d/1UdfsQoTZygWk28zfPL-xunFtmrPz7v4H/view?usp=sharing"
+              }
+              rating={4}
             />
-          </div> */}
+          </div>
+
+          <div className="home_row">
+            <p className="lorem23">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime
+              quae necessitatibus non natus nulla culpa vitae! Accusantium nobis
+              dolores iusto explicabo delectus animi eligendi nulla excepturi
+              eaque odit. Ad ipsum officia sunt quidem exercitationem? Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Maxime quae
+              necessitatibus non natus nulla culpa vitae! Accusantium nobis
+              dolores iusto explicabo delectus animi eligendi nulla excepturi
+              eaque odit. Ad ipsum officia sunt quidem exercitationem? Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Maxime quae
+              necessitatibus non natus nulla culpa vitae! Accusantium nobis
+              dolores iusto explicabo delectus animi eligendi nulla excepturi
+              eaque odit. Ad ipsum officia sunt quidem exercitationem?
+            </p>
+          </div>
+
+          <div className="home_row">
+            <Carousal breakPoints={breakPoints}>
+              <Product
+                key="12"
+                id="12"
+                title="Striver 180 Questions (!Downloadable)"
+                price={0}
+                download={
+                  "https://docs.google.com/document/d/1SM92efk8oDl8nyVw8NHPnbGexTS9W-1gmTEYfEurLWQ/edit"
+                }
+                image="https://i.ibb.co/5Gkh8m4/striver.png"
+                rating={4}
+              />
+              <Product
+                key="13"
+                id="13"
+                title="Dynamic Programming Coding interviews"
+                price={0}
+                download={
+                  "https://drive.google.com/file/d/1BBS1PpmpoamYCj8KZ4o_hkskVh7QtvtJ/view?usp=sharing"
+                }
+                image="https://images-na.ssl-images-amazon.com/images/I/81io-ZZJjEL.jpg"
+                rating={4}
+              />
+              <Product
+                key="14"
+                id="14"
+                title="500 Numerical Aptitude QnA"
+                price={0}
+                download={"https://drive.google.com/file/d/1yOJz7BSlTTUJssZfBl-wetY2P7yaOmPT/view?usp=sharing"}
+                image="https://i.ibb.co/CVNtGPS/Aptitude.png"
+                rating={4}
+              />
+              <Product
+                key="15"
+                id="15"
+                title="Amazon Interview Questions"
+                price={0}
+                image="https://i.ibb.co/jH9PnT0/amazon-thumbnail.png"
+                download={
+                  "https://drive.google.com/file/d/1eFs_1hIzvkSvv3MwpjZ5GyIWaD3dbik_/view?usp=sharing"
+                }
+                rating={4}
+              />
+              <Product
+                key="16"
+                id="16"
+                title="Airbnb Interview Questions"
+                price={0}
+                download={
+                  "https://drive.google.com/file/d/17XHhkvXZWz8_cycukj5bfKNYXBvn6YcX/view?usp=sharing"
+                }
+                image="https://i.ibb.co/D5wfgL1/airbnb.png"
+                rating={4}
+              />
+
+              <Product
+                key="17"
+                id="17"
+                title="Epson 6641 Black Ink Bottle - 70 ml"
+                price={299}
+                download={""}
+                image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
+                rating={4}
+              />
+              <Product
+                key="18"
+                id="18"
+                title="Epson 6641 Black Ink Bottle - 70 ml"
+                price={299}
+                download={""}
+                image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
+                rating={4}
+              />
+              <Product
+                key="19"
+                id="19"
+                title="Epson 6641 Black Ink Bottle - 70 ml"
+                price={299}
+                download={""}
+                image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
+                rating={4}
+              />
+              
+            </Carousal>
+          </div>
 
           <div className="home_row">
             <Product
-              key="12"
-              id="12"
-              title="Epson EcoTank L3150 Wi-Fi All-in-One Ink Tank Printer (Black)"
-              price={13698}
-              image="https://images-na.ssl-images-amazon.com/images/I/51VC5qV7cQL._SL1000_.jpg"
-              rating={4}
-            />
-            <Product
-              key="13"
-              id="13"
+              key="20"
+              id="20"
               title="HP 678 Tri-Color Ink Cartridge"
               price={809}
               image="https://images-na.ssl-images-amazon.com/images/I/71KmvDHtyHL._SL1500_.jpg"
               rating={4}
             />
             <Product
-              key="14"
-              id="14"
+              key="21"
+              id="21"
               title="Canon Pixma G3000 All-in-One Wireless Ink Tank Colour Printer"
               price={13849}
               image="https://images-na.ssl-images-amazon.com/images/I/61saGX0RILL._SL1040_.jpg"
@@ -160,82 +259,13 @@ function Home() {
             />
 
             <Product
-              key="15"
-              id="15"
+              key="22"
+              id="22"
               title="Epson 6641 Black Ink Bottle - 70 ml"
               price={299}
               image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
               rating={4}
             />
-          </div>
-          <div className="home_row">
-            <Carousal breakPoints={breakPoints}>
-              <Product
-                key="12"
-                id="12"
-                title="Epson EcoTank L3150 Wi-Fi All-in-One Ink Tank Printer (Black)"
-                price={13698}
-                image="https://images-na.ssl-images-amazon.com/images/I/51VC5qV7cQL._SL1000_.jpg"
-                rating={4}
-              />
-              <Product
-                key="13"
-                id="13"
-                title="HP 678 Tri-Color Ink Cartridge"
-                price={809}
-                image="https://images-na.ssl-images-amazon.com/images/I/71KmvDHtyHL._SL1500_.jpg"
-                rating={4}
-              />
-              <Product
-                key="14"
-                id="14"
-                title="Canon Pixma G3000 All-in-One Wireless Ink Tank Colour Printer"
-                price={13849}
-                image="https://images-na.ssl-images-amazon.com/images/I/61saGX0RILL._SL1040_.jpg"
-                rating={5}
-              />
-
-              <Product
-                key="15"
-                id="15"
-                title="Epson 6641 Black Ink Bottle - 70 ml"
-                price={299}
-                image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
-                rating={4}
-              />
-              <Product
-                key="15"
-                id="15"
-                title="Epson 6641 Black Ink Bottle - 70 ml"
-                price={299}
-                image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
-                rating={4}
-              />
-              <Product
-                key="15"
-                id="15"
-                title="Epson 6641 Black Ink Bottle - 70 ml"
-                price={299}
-                image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
-                rating={4}
-              />
-              <Product
-                key="15"
-                id="15"
-                title="Epson 6641 Black Ink Bottle - 70 ml"
-                price={299}
-                image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
-                rating={4}
-              />
-              <Product
-                key="15"
-                id="15"
-                title="Epson 6641 Black Ink Bottle - 70 ml"
-                price={299}
-                image="https://images-na.ssl-images-amazon.com/images/I/411kZc11THL.jpg"
-                rating={4}
-              />
-            </Carousal>
           </div>
         </div>
 

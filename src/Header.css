@@ -21,8 +21,8 @@
   border: 1px #131921 solid;
   /* height: 40px; */
 }
-.logo:hover {
-  color: #45f315;
+.logo> strong :hover {
+  color: #15a2f3;
 }
 .header_searchIcon {
   padding: 5px;
@@ -103,5 +103,5 @@
   color: rgb(0, 183, 255);
 }
 .button:hover {
-  color: #45f315;
+  color: #159af3;
 }

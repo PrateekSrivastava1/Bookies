@@ -38,7 +38,6 @@ const Firstwindow = () => {
                     </NavLink> */}
                   </div>
                 </div>
-                {/* for images */}
                 <div className="col-lg-6  order-1 order-lg-2">
                   <div
                     className=" img-fluid animated pt-6 pt-lg-6"

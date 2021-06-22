@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0;
   margin: 0;
 }
@@ -10,7 +10,6 @@
   align-items: center;
   background-color: #ffffff;
   border: 1px black solid;
-  /* width: 100px; */
 }
 .amazon_logo {
   margin-top: 20px;
@@ -94,9 +93,6 @@
   color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-/* .signin > button:hover {
-
-} */
 button.signin_continueButton:hover {
   background-color: rgb(209, 146, 28);
   cursor: pointer;
@@ -104,4 +100,33 @@ button.signin_continueButton:hover {
 button.signin_newUserButton:hover {
   background-color: rgb(151, 150, 147);
   cursor: pointer;
+} */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+.body{
+  padding-top: 100px;
+}
+.cont{
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(84, 147, 184, 0.5),
+  0 6px 20px 0 rgba(84, 147, 184, 0.6);
+  width: 100%;
+}
+.image{
+  /* width: 530px; */
+  width: 100%;
+  object-fit: cover;
+}
+.row{
+  /* background: white; */
+  border-radius: 10px;
+}
+.btt{
+  margin-left: 10px;
 }

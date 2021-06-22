@@ -7,8 +7,12 @@ import CurrencyFormat from "react-currency-format";
 import { getTotalAmount } from "./Reducer";
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { useEffect } from "react";
+import { Button } from "bootstrap/dist/js/bootstrap.bundle";
 import axios from "./axios";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle";
 import { auth, db } from "./firebase";
+import lottie from "lottie-web";
 function Payment() {
   const [{ cart, user }, setCart] = useStateValue();
   const stripe = useStripe();
@@ -43,8 +47,7 @@ function Payment() {
         },
       })
       .then(({ paymentIntent }) => {
-        db
-          .collection("Customer")
+        db.collection("Customer")
           .doc(user?.uid)
           .collection("orders")
           .doc(paymentIntent.id)
@@ -72,42 +75,21 @@ function Payment() {
   };
 
   return (
-    <div className="payment">
+    <>
+      {/* <div className="payment">
       <div className="paymentBox">
-        <h1>
+        <h3>
           Your Cart(<Link to="/Cart">{cart.length} Items</Link>)
-        </h1>
+        </h3>
         <div className="paymentRow">
           <div className="userInfo">
-            <h3>Delivery Info</h3>
+            <h3>User uid: </h3>
           </div>
           <div className="paymentAddress">
             <p>{user?.email}</p>
-            <p>address line</p>
-            <p>address line</p>
           </div>
         </div>
         <div className="paymentRow">
-          <div className="userInfo">
-            <h3>Review items and Delivery</h3>
-          </div>
-          <div className="cartProductPaymentItems">
-            {cart.map((i) => (
-              <CartItems
-                key={i.id}
-                id={i.id}
-                title={i.title}
-                image={i.image}
-                price={i.price}
-                rating={i.rating}
-              />
-            ))}
-          </div>
-        </div>
-        <div className="paymentRow">
-          <div className="userInfo">
-            <h3>Payment method</h3>
-          </div>
           <div className="stripeDetail">
             <form action="" onSubmit={payment}>
               <CurrencyFormat
@@ -129,7 +111,81 @@ function Payment() {
           </div>
         </div>
       </div>
-    </div>
+    </div> */}
+
+      {/* Stripe payment png: https://i.ibb.co/VTLQdYT/stripe.png */}
+      {/* payment png: https://i.ibb.co/gDmsyg1/patment.png */}
+
+      <div className="body">
+        <section className="Form my-4 mx-5">
+          <div className="container cont">
+            <div className="row no-gutters ">
+              <div className="col-lg-5 ">
+                <img
+                  className="image"
+                  src="https://i.ibb.co/VTLQdYT/stripe.png"
+                  alt=""
+                />
+              </div>
+              <div className="col-lg-7 px-5">
+                <h4 className="font-weight-bold py-3 .d-sm-flex">User ID:</h4>
+                <span>{user?.email}</span>
+                <form className="text-center" onSubmit={payment}>
+                  <div className="form-row">
+                    <div className="col-lg-7">
+                      {/* <input
+                        type="email"
+                        placeholder="Email-Address"
+                        id=""
+                        className="form-control my-3 p-3"
+                      /> */}
+                      <h4 className="form-control my-3 p-3">
+                        <CurrencyFormat
+                          renderText={(value) => <h3>Total Price: {value}</h3>}
+                          decimalScale={2}
+                          value={getTotalAmount(cart)}
+                          displayType={"text"}
+                          thousandSeparator={true}
+                          prefix={"₹"}
+                        />
+                      </h4>
+                    </div>
+                  </div>
+                  <div className="form-row">
+                    <div className="col-lg-7">
+                      {/* <input
+                        type="password"
+                        placeholder="Password"
+                        id=""
+                        className="form-control  my-3 p-3"
+                      /> */}
+                      <CardElement
+                        className="form-control  my-3 p-3"
+                        onChange={handleChange}
+                      />
+                    </div>
+                  </div>
+                  <div className="form-row">
+                    <div className="col-lg-7">
+                      <button
+                        type="button"
+                        className="btn btn-outline-primary btn-lg bt mb-5"
+                        disabled={processing || disabled || enabled}
+                      >
+                        <span>
+                          {processing ? "Buy now" : <p>Processing</p>}
+                        </span>
+                      </button>
+                      {error && <div>{error}</div>}
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </>
   );
 }
 

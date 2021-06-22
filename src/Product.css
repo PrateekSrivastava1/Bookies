@@ -9,6 +9,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   flex: 1 2 200px;
+  transition: transform 0.5s;
   align-items: center;
   justify-content: space-between;
   margin: 10px;
@@ -20,10 +21,28 @@
   border-radius: 25px;
   background-color: rgb(255, 255, 255);
   z-index: 1;
-  box-shadow: 0 4px 8px 0 rgba(84, 147, 184, 0.2), 0 6px 20px 0 rgba(84, 147, 184, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(84, 147, 184, 0.2),
+    0 6px 20px 0 rgba(84, 147, 184, 0.2);
 }
 .product:hover {
-  box-shadow: 0 4px 8px 0 rgba(84, 147, 184, 0.5), 0 6px 20px 0 rgba(84, 147, 184, 0.6);
+  box-shadow: 0 4px 8px 0 rgba(84, 147, 184, 0.5),
+    0 6px 20px 0 rgba(84, 147, 184, 0.6);
+}
+
+.product_rating {
+  display: flex;
+}
+.product:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  z-index: 10;
+}
+.product > img:hover {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  z-index: 10;
 }
 .product_info {
   height: 100px;
@@ -48,9 +67,7 @@
     max-height: 170px;
   }
 }
-.product_rating {
-  display: flex;
-}
+
 .product > img {
   max-height: 200px;
   width: 100%;
@@ -59,28 +76,28 @@
   margin-bottom: 15px;
   z-index: 1;
 }
-.overlay{
-    position: absolute;
-    top: 0;
-    left:0;
-    height: 223px;
-    width: 100%;
-    background:rgba(0, 0, 0, 0.19);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: none;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 223px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.19);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: none;
 }
 
-.overlay p{
-    color: orange;
-    background-color: rgb(14, 13, 13);
-    transform: translateY(-150px);
-    transition-property: transform;
+.overlay p {
+  color: orange;
+  background-color: rgb(14, 13, 13);
+  transform: translateY(-150px);
+  transition-property: transform;
 }
 
-.overlay:hover p{
-    transform: translateY(0px);
+.overlay:hover p {
+  transform: translateY(0px);
 }
 .product > button {
   display: flex;
@@ -96,12 +113,12 @@
   background-color: rgb(209, 146, 28);
   cursor: pointer;
 }
-.button{
-    color: #f50057;
-    display: flex;
+.button {
+  color: #f50057;
+  display: flex;
 }
 .button:hover {
-    color: rgb(9, 255, 0) ;
+  color: rgb(0, 140, 255);
 }
 .product_price {
   margin-top: 5px;
