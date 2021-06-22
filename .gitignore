@@ -4,11 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
+
+#components
 src/Card.js
 src/Nav.css
 src/Nav.js
 src/card.css
 src/axios.js 
+
 # testing
 /coverage
 
