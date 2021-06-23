@@ -6,7 +6,16 @@ import GetAppIcon from "@material-ui/icons/GetApp";
 import IconButton from "@material-ui/core/IconButton";
 import AddShoppingCartSharpIcon from "@material-ui/icons/AddShoppingCartSharp";
 import { useStateValue } from "./StateProvider";
-function Product({ download, key, id, title, image, price, rating }) {
+function Product({
+  download,
+  key,
+  id,
+  title,
+  image,
+  price,
+  rating,
+  hideButton,
+}) {
   const [{ cart }, setCart] = useStateValue();
   const addToCart = () => {
     setCart({
@@ -24,6 +33,15 @@ function Product({ download, key, id, title, image, price, rating }) {
 
   return (
     <>
+      {/* 
+     {!hideButton &&  <IconButton
+                    onClick={deleteItem}
+                    aria-label="Delete from cart"
+                    className="delete"
+                  >
+                    <DeleteTwoToneIcon fontSize="large" />
+                  </IconButton>}
+                   */}
       <div className="product">
         <div className="product_info">
           <p>{title}</p>
@@ -43,25 +61,28 @@ function Product({ download, key, id, title, image, price, rating }) {
         {/* <button onClick={addToCart}>Add to cart</button> */}
         <div>
           <div>
-            <IconButton
-              href={download}
-              attributes-list
-              download
-              target="_blank"
-              aria-label="add to shopping cart"
-            >
-              <GetAppIcon className="button" fontSize="large" />
-            </IconButton>
-            <IconButton aria-label="add to shopping cart">
-              <AddShoppingCartSharpIcon
-                className="button"
-                fontSize="large"
-                onClick={addToCart}
-              />
-            </IconButton>
+            {!hideButton ? (
+              <IconButton aria-label="add to shopping cart">
+                <AddShoppingCartSharpIcon
+                  className="button"
+                  fontSize="large"
+                  onClick={addToCart}
+                />
+              </IconButton>
+            ) : (
+              <IconButton
+                href={download}
+                attributes-list
+                download
+                target="_blank"
+                aria-label="add to shopping cart"
+              >
+                <GetAppIcon className="button" fontSize="large" />
+              </IconButton>
+            )}
           </div>
         </div>
-        </div>
+      </div>
     </>
   );
 }

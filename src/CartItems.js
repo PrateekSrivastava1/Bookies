@@ -5,7 +5,7 @@ import IconButton from "@material-ui/core/IconButton";
 import DeleteTwoToneIcon from "@material-ui/icons/DeleteTwoTone";
 import "./TestCart.css";
 import { useStateValue } from "./StateProvider";
-function CartItems({ key, id, title, image, price, rating }) {
+function CartItems({ key, id, title, image, price, rating, hideButton }) {
   const [{ cart }, setCart] = useStateValue();
 
   const deleteItem = () => {
@@ -16,30 +16,8 @@ function CartItems({ key, id, title, image, price, rating }) {
   };
   return (
     <>
-      {/* <div className="cartItems">
-        <img className="cartProduct_image" src={image} alt="" />
-        <div className="cartProduct_description">
-          <p className="cartProduct_title">{title}</p>
-          <p className="cartProduct_price">
-            <strong>₹</strong>
-            <strong>{price}</strong>
-          </p>
-          <div className="cartProduct_rating">
-            {Array(rating)
-              .fill()
-              .map((_, i) => (
-                <p>⭐</p>
-              ))}
-          </div>
-          <button onClick={deleteItem}>Remove from basket</button>
-        </div>
-      </div> */}
       <div className="smallContainer cartPage">
         <table>
-          {/* <tr>
-            <th>Product</th>
-            <th>Subtotal</th>
-          </tr> */}
           <tr>
             <td>
               <div className="cart-info">
@@ -54,14 +32,13 @@ function CartItems({ key, id, title, image, price, rating }) {
                       ))}
                   </div>
                   <br />
-                  {/* <a href="">Remove</a> */}
-                  <IconButton
+                  {!hideButton &&  <IconButton
                     onClick={deleteItem}
                     aria-label="Delete from cart"
                     className="delete"
                   >
                     <DeleteTwoToneIcon fontSize="large" />
-                  </IconButton>
+                  </IconButton>}
                 </div>
               </div>
             </td>

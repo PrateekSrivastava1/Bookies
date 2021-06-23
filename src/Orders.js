@@ -3,6 +3,8 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import { db } from "./firebase";
+import Footer from "./Footer";
+
 import { useStateValue } from "./StateProvider";
 import OrderItems from "./OrderItems";
 function Orders() {
@@ -28,14 +30,17 @@ function Orders() {
   }, [user]);
 
   return (
+    <>
     <div className="orders_box" >
-      <h1>  your orders </h1>
+      <h1>  Your Orders </h1>
       <div className="orderItems">
           {order?.map(order => (
               <OrderItems order={order} />
           ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

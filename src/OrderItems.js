@@ -11,9 +11,10 @@ function OrderItems({ order }) {
 
   return (
     <div className="orders">
-      <h1>orderItems</h1>
+      <h1>Orders</h1>
       <p>{moment.unix(order.data.created).format("Do MMMM YYYY, h:ma")}</p>
       <p className="orderId">
+      <small>Order ID: </small>
         <small>{order.id}</small>
       </p>
       {order.data.cart?.map((item) => (
@@ -24,6 +25,7 @@ function OrderItems({ order }) {
           image={item.image}
           price={item.price}
           rating={item.rating}
+          hideButton
         />
       ))}
 

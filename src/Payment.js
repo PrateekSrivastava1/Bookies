@@ -76,43 +76,6 @@ function Payment() {
 
   return (
     <>
-      {/* <div className="payment">
-      <div className="paymentBox">
-        <h3>
-          Your Cart(<Link to="/Cart">{cart.length} Items</Link>)
-        </h3>
-        <div className="paymentRow">
-          <div className="userInfo">
-            <h3>User uid: </h3>
-          </div>
-          <div className="paymentAddress">
-            <p>{user?.email}</p>
-          </div>
-        </div>
-        <div className="paymentRow">
-          <div className="stripeDetail">
-            <form action="" onSubmit={payment}>
-              <CurrencyFormat
-                renderText={(value) => <h3>Total Price: {value}</h3>}
-                decimalScale={2}
-                value={getTotalAmount(cart)}
-                displayType={"text"}
-                thousandSeparator={true}
-                prefix={"₹"}
-              />
-              <CardElement onChange={handleChange} />
-              <div className="totalAmount">
-                <button disabled={processing || disabled || enabled}>
-                  <span>{processing ? <p>Processing</p> : "Buy now"}</span>
-                </button>
-              </div>
-              {error && <div>{error}</div>}
-            </form>
-          </div>
-        </div>
-      </div>
-    </div> */}
-
       {/* Stripe payment png: https://i.ibb.co/VTLQdYT/stripe.png */}
       {/* payment png: https://i.ibb.co/gDmsyg1/patment.png */}
 
@@ -139,7 +102,7 @@ function Payment() {
                         id=""
                         className="form-control my-3 p-3"
                       /> */}
-                      <h4 className="form-control my-3 p-3">
+                      <h4 className=" my-3 p-3">
                         <CurrencyFormat
                           renderText={(value) => <h3>Total Price: {value}</h3>}
                           decimalScale={2}
@@ -153,14 +116,8 @@ function Payment() {
                   </div>
                   <div className="form-row">
                     <div className="col-lg-7">
-                      {/* <input
-                        type="password"
-                        placeholder="Password"
-                        id=""
-                        className="form-control  my-3 p-3"
-                      /> */}
                       <CardElement
-                        className="form-control  my-3 p-3"
+                        className="form-control  my-3 p-4"
                         onChange={handleChange}
                       />
                     </div>
@@ -173,7 +130,7 @@ function Payment() {
                         disabled={processing || disabled || enabled}
                       >
                         <span>
-                          {processing ? "Buy now" : <p>Processing</p>}
+                          {processing ? <p>Processing</p> : "Buy now"}
                         </span>
                       </button>
                       {error && <div>{error}</div>}
