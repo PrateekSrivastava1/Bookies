@@ -25,20 +25,20 @@ const Footer = () => {
           <div className="lower">
             <div className="topic">Contact us</div>
             <div className="phone">
-              <Link>
-                <i className="">
+              <i className="">
+                <Link>
                   <PhoneAndroidRoundedIcon />
-                </i>
-                +91-7275769259
-              </Link>
+                  +91-7275769259
+                </Link>
+              </i>
             </div>
             <div className="email">
-              <Link>
-                <i className="">
+              <i className="">
+                <Link>
                   <ContactMailRoundedIcon />
-                </i>
-                prateeksdr4@gmail.com
-              </Link>
+                  prateeksdr4@gmail.com
+                </Link>
+              </i>
             </div>
           </div>
         </div>
@@ -49,8 +49,8 @@ const Footer = () => {
             <Link to="/signin">
               <input type="submit" name="" value="Sign Up" />
             </Link>
-            <SocialMedia />
-            <strong className="socialText">Connect me on social media</strong>
+            {/* <SocialMedia /> */}
+            {/* <strong className="socialText">Connect me on social media</strong> */}
           </form>
         </div>
       </div>

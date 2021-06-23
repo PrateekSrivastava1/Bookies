@@ -11,7 +11,7 @@ import AddRoundedIcon from "@material-ui/icons/AddRounded";
 function SocialMedia() {
   return (
     <div className="body">
-      <input className="ip" type="checkbox" id="click" />
+      {/* <input className="ip" type="checkbox" id="click" />
       <div>
         <i className="ii">
           <Link>
@@ -39,7 +39,7 @@ function SocialMedia() {
         <label htmlFor="click">
           <span className="fas fa-plus"></span>
         </label>
-      </div>
+      </div> */}
     </div>
   );
 }
