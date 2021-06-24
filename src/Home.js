@@ -7,7 +7,7 @@ import Firstwindow from "./Firstwindow";
 import SocialMedia from "./SocialMedia";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
-import  FloatingSocialMedia  from "./FloatingSocialMedia";
+import FloatingSocialMedia from "./FloatingSocialMedia";
 import Footer from "./Footer";
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -269,10 +269,16 @@ function Home() {
             />
           </div>
         </div>
+
+        <div className="mr">
+          <Link to="/more">
+            <input type="submit" name="" value="More eBooks ⇰" />
+          </Link>
+        </div>
       </div>
 
       <Footer />
-      <FloatingSocialMedia/>
+      <FloatingSocialMedia />
     </>
   );
 }

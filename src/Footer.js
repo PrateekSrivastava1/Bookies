@@ -2,6 +2,8 @@ import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import Fab from "@material-ui/core/Fab";
+import StarBorderIcon from "@material-ui/icons/StarBorder";
 import "./Footer.css";
 import ContactMailRoundedIcon from "@material-ui/icons/ContactMailRounded";
 import PhoneAndroidRoundedIcon from "@material-ui/icons/PhoneAndroidRounded";
@@ -26,7 +28,7 @@ const Footer = () => {
             <div className="topic">Contact us</div>
             <div className="phone">
               <i className="">
-                <a href="tel:7275769259">
+                <a href="tel:+91 7275769259">
                   <PhoneAndroidRoundedIcon />
                   +91-7275769259
                 </a>
@@ -43,19 +45,25 @@ const Footer = () => {
           </div>
         </div>
         <div className="right box">
-          <div className="topic">Sign Up for free</div>
-
           <form action="#">
             <Link to="/signin">
               <input type="submit" name="" value="Sign Up" />
             </Link>
+            <div className="topic">Sign Up for free</div>
+
             {/* <strong className="socialText">Connect me on social media</strong> */}
           </form>
           <SocialMedia />
         </div>
       </div>
       <div className="bottom">
-        <div className="social"></div>
+        {/* <div className="social"></div> */}
+        <a href="https://github.com/prateek-pixels" target="_blank">
+        <Fab variant="extended" className="fab">
+          <StarBorderIcon href="https://github.com/prateek-pixels" />
+          GitHub
+        </Fab>
+        </a>
         <p>
           Copyright © 2020 <a href="#">Bookies.com</a> All rights reserved
         </p>

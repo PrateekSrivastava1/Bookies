@@ -22,22 +22,10 @@ function SocialMedia() {
         <a href="https://github.com/prateek-pixels" target="_blank">
           <i className="fab fa-github"></i>
         </a>
-        <a href="https://github.com/prateek-pixels" target="_blank" target="_blank">
-          <i className="fa fa-star"></i>
-        </a>
+
         <br />
       </div>
-      <strong>Let's Connect and give it a star</strong>
-
-      {/* <div className="connect">
-        <br />
-        <Fab variant="extended" className="fab">
-          <StarBorderIcon />
-          GitHub
-        </Fab>
-        <br />
-        <strong>Git it a Star</strong>
-      </div> */}
+      <strong>Let's Connect.</strong>
     </div>
   );
 }

@@ -2,7 +2,12 @@ import React from "react";
 import "./App.css";
 import Header from "./Header";
 import Home from "./Home";
-import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+} from "react-router-dom";
 import Cart from "./Cart";
 import SignIn from "./SignIn";
 import { useEffect } from "react";
@@ -14,6 +19,7 @@ import { Elements } from "@stripe/react-stripe-js";
 import Orders from "./Orders";
 import TestCart from "./TestCart";
 import Firstwindow from "./Firstwindow";
+import More from "./More";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
 const promise = loadStripe(
@@ -43,6 +49,10 @@ function App() {
     <Router>
       <div className="app">
         <Switch>
+          <Route exact path="/more">
+            <Header />
+            <More />
+          </Route>
           <Route exact path="/signin">
             <SignIn />
           </Route>
