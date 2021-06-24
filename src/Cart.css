@@ -13,6 +13,7 @@
 table {
   width: 100%;
   border-collapse: collapse;
+  border-radius: 10px;
 }
 th {
   display: flex;
@@ -24,6 +25,8 @@ th {
   color: #fff;
   background: #3b90ff;
   font-weight: normal;
+  /* border-radius: 10px; */
+  /* border-top: 10px; */
 }
 .totalPrice table{
   /* border-top: 3px solid #3b90ff; */
@@ -33,4 +36,7 @@ th {
 th:last-child {
   padding-right: 40px;
   text-align: right;
+}
+tr{
+  border-top-left-radius: 10px;
 }

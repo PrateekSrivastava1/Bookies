@@ -4,6 +4,8 @@ import CurrencyFormat from "react-currency-format";
 import { useStateValue } from "./StateProvider";
 import { getTotalAmount } from "./Reducer";
 import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Button from "@material-ui/core/Button";
 function Subtotal() {
   const history = useHistory();
   const [{ cart }, setCart] = useStateValue();
@@ -15,7 +17,7 @@ function Subtotal() {
           <>
             <strong>
               Subtotal ({cart.length} items): {value}
-              </strong>
+            </strong>
           </>
         )}
         decimalScale={2}
@@ -24,8 +26,17 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"₹"}
       />
-      <button type="button" onClick={(event) => history.push("/payment")}>Buy now</button>
-     
+      <Link to={cart.length == 0 && "/"}>
+        {/* <button type="button" onClick={(event) => history.push("/payment")} Buy now > </button> */}
+        <Button
+          onClick={(event) => history.push("/payment")}
+          variant="contained"
+          color="primary"
+          className="butt"
+        >
+          Buy now
+        </Button>
+      </Link>
     </div>
   );
 }

@@ -26,18 +26,18 @@ const Footer = () => {
             <div className="topic">Contact us</div>
             <div className="phone">
               <i className="">
-                <Link>
+                <a href="tel:7275769259">
                   <PhoneAndroidRoundedIcon />
                   +91-7275769259
-                </Link>
+                </a>
               </i>
             </div>
             <div className="email">
               <i className="">
-                <Link>
+                <a href="mailto: prateeksdr4@gmail.com" target="_blank">
                   <ContactMailRoundedIcon />
                   prateeksdr4@gmail.com
-                </Link>
+                </a>
               </i>
             </div>
           </div>
@@ -49,14 +49,15 @@ const Footer = () => {
             <Link to="/signin">
               <input type="submit" name="" value="Sign Up" />
             </Link>
-            {/* <SocialMedia /> */}
             {/* <strong className="socialText">Connect me on social media</strong> */}
           </form>
+          <SocialMedia />
         </div>
       </div>
       <div className="bottom">
+        <div className="social"></div>
         <p>
-          Copyright © 2020 <Link href="#">Bookies.com</Link> All rights reserved
+          Copyright © 2020 <a href="#">Bookies.com</a> All rights reserved
         </p>
       </div>
     </footer>

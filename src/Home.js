@@ -7,6 +7,7 @@ import Firstwindow from "./Firstwindow";
 import SocialMedia from "./SocialMedia";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
+import  FloatingSocialMedia  from "./FloatingSocialMedia";
 import Footer from "./Footer";
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -146,7 +147,7 @@ function Home() {
           </div>
 
           <div className="home_row">
-            <Carousal breakPoints={breakPoints}>
+            <Carousal breakPoints={breakPoints} className="slide">
               <Product
                 key="12"
                 id="12"
@@ -271,6 +272,7 @@ function Home() {
       </div>
 
       <Footer />
+      <FloatingSocialMedia/>
     </>
   );
 }

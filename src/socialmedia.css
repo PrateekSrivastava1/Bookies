@@ -1,72 +1,62 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.body strong {
+  /* text-align: center; */
+  padding-left: 5px;
+  justify-content: center;
 }
-.body{
-    min-height: 10vh;
-    display: flex;
-    align-items: center;
-    padding-left: 130px;
+.social-icons a {
+  width: 30px;
+  height: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px;
+  border-radius: 50%;
+  font-size: 30px;
 }
-div label{
-    cursor: pointer;
+.social-icons {
+  display: flex;
 }
-div label span{
-    position: relative;
-    z-index: 10;
-    color: white;
-    background: #0669eb;
-    width: 50px;
-    height: 50px;
-    padding-top: 14px;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 22px;
-    transition: 0.4s;
+.social-icons i {
+  color: #1164ff;
 }
-div label span:hover{
-    background-color: rgb(71, 166, 255);
-    color: black;
+.social-icons a:hover {
+  background-color: #000000;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  transition: all ease 0.5s;
 }
 
-
-.body  .ip{
-    display: none;
+.social-icons a:hover i,
+.a-social-icons a:hover i {
+  /* background-color: #000000; */
+  color: rgb(0, 0, 0);
+  transition: all ease 0.5s;
 }
-div .ii{
-    cursor: pointer;
-    position: absolute;
-    transform: translateY(5px) translateX(5px);
-    width: 40px;
-    height: 40px;
-    padding-top: 11px;
-    border-radius: 50%;
-    color: aliceblue;
-    background-color: transparent;
-    font-size: 18px;
-    opacity: .2;
-    transition: .4s;
+.a-social-icons {
+  position: fixed;
+  top: 30%;
+  right: -20px;
+  z-index: 10;
+  transform: translateX(-50%);
 }
-.body  .ip:checked ~ div label span{
-    transform: rotate(180deg);
+.a-social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 0px;
+  margin: 0px;
+  line-height: 0px;
+  background-color: #ffffff;
+  border: 1px solid #cbcbcb;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 }
-.body  .ip:checked ~ div .ii{
-    opacity: 1;
+.a-social-icons i {
+  color: #1164ff;
+  font-size: 20px;
 }
-.body  .ip:checked ~ div .ii:nth-child(1){
-    transform: translateY(70px) translateX(5px);
-    transition-delay: .8s;
+@media screen and (max-width: 700px) {
+  .a-social-icons {
+    top: 50%;
+  }
 }
-.body  .ip:checked ~ div .ii:nth-child(2){
-    transform: translateY(-60px) translateX(5px);
-    transition-delay: .4s;
-}
-.body  .ip:checked ~ div .ii:nth-child(3){
-    transform: translateY(5px) translateX(70px);
-    transition-delay: .6s;
-}
-.body  input:checked ~ div .ii:nth-child(4){
-    transform: translateY(5px) translateX(-60px);
-    transition-delay: .2s;
-} */

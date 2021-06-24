@@ -72,7 +72,7 @@
   max-height: 200px;
   width: 100%;
   object-fit: contain;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-bottom: 15px;
   z-index: 1;
 }
@@ -99,20 +99,7 @@
 .overlay:hover p {
   transform: translateY(0px);
 }
-.product > button {
-  display: flex;
-  background: orange;
-  padding: 13px 28px;
-  border: 1px rgb(133, 100, 40) solid;
-  border-radius: 10px;
-  margin: 10px;
-  color: black;
-}
 
-.product > button:hover {
-  background-color: rgb(209, 146, 28);
-  cursor: pointer;
-}
 .button {
   color: #f50057;
   display: flex;

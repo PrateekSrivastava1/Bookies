@@ -3,6 +3,10 @@ import "./Cart.css";
 import { useStateValue } from "./StateProvider";
 import Subtotal from "./Subtotal";
 import CartItems from "./CartItems";
+import SocialMedia from "./SocialMedia";
+import Footer from "./Footer";
+import  FloatingSocialMedia  from "./FloatingSocialMedia";
+
 function Cart() {
   const [{ cart, user }, setCart] = useStateValue();
 
@@ -38,6 +42,8 @@ function Cart() {
           </table>
         </div>
       </div>
+      <Footer/>
+      <FloatingSocialMedia/>
     </>
   );
 }

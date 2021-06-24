@@ -33,15 +33,6 @@ function Product({
 
   return (
     <>
-      {/* 
-     {!hideButton &&  <IconButton
-                    onClick={deleteItem}
-                    aria-label="Delete from cart"
-                    className="delete"
-                  >
-                    <DeleteTwoToneIcon fontSize="large" />
-                  </IconButton>}
-                   */}
       <div className="product">
         <div className="product_info">
           <p>{title}</p>
@@ -58,7 +49,6 @@ function Product({
           </div>
         </div>
         <img className="image" src={image} alt="" />
-        {/* <button onClick={addToCart}>Add to cart</button> */}
         <div>
           <div>
             {!hideButton ? (

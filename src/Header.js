@@ -92,8 +92,7 @@ function Header() {
                         to={user != null && "/orders"}
                       >
                         <Badge color="secondary">
-                        <StoreMallDirectoryRoundedIcon className="button" />
-
+                          <StoreMallDirectoryRoundedIcon className="button" />
                           Orders
                         </Badge>
                       </NavLink>
@@ -110,8 +109,6 @@ function Header() {
                           renderText={(value) => (
                             <Badge badgeContent={value} color="secondary">
                               <AccountBalanceIcon className="button" />
-
-                              CR
                             </Badge>
                           )}
                           decimalScale={2}
@@ -120,6 +117,7 @@ function Header() {
                           thousandSeparator={true}
                           prefix={"₹"}
                         />
+                        CR
                       </NavLink>
                     </li>
                     <li className="nav-item">
@@ -131,9 +129,9 @@ function Header() {
                         to="/cart"
                       >
                         <Badge badgeContent={cart?.length} color="secondary">
-                        <ShoppingCartIcon className="button" />
-                          CART 
+                          <ShoppingCartIcon className="button" />
                         </Badge>
+                        CART
                       </NavLink>
                     </li>
                   </ul>

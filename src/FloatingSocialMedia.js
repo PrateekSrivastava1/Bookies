@@ -1,12 +1,9 @@
 import React from "react";
 import "./socialmedia.css";
-import { Link } from "react-router-dom";
-import Fab from "@material-ui/core/Fab";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
-function SocialMedia() {
+function FloatingSocialMedia() {
   return (
-    <div className="body">
-      <div className="social-icons">
+    <div>
+      <div className="a-social-icons">
         <a href="https://www.linkedin.com/in/prateek-pixels/" target="_blank">
           <i className="fab fa-linkedin"></i>
         </a>
@@ -25,21 +22,9 @@ function SocialMedia() {
         <a href="https://github.com/prateek-pixels" target="_blank" target="_blank">
           <i className="fa fa-star"></i>
         </a>
-        <br />
       </div>
-      <strong>Let's Connect and give it a star</strong>
-
-      {/* <div className="connect">
-        <br />
-        <Fab variant="extended" className="fab">
-          <StarBorderIcon />
-          GitHub
-        </Fab>
-        <br />
-        <strong>Git it a Star</strong>
-      </div> */}
     </div>
   );
 }
 
-export default SocialMedia;
+export default FloatingSocialMedia;
