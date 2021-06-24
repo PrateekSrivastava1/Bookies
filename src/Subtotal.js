@@ -8,7 +8,8 @@ import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 function Subtotal() {
   const history = useHistory();
-  const [{ cart }, setCart] = useStateValue();
+  // const [{ cart }, setCart] = useStateValue();
+  const [{ cart, user }, setCart] = useStateValue();
 
   return (
     <div className="subtotal">
@@ -26,10 +27,9 @@ function Subtotal() {
         thousandSeparator={true}
         prefix={"₹"}
       />
-      <Link to={cart.length == 0 && "/"}>
+      <Link to={(cart.length == 0 || user == null) ? "/signin" : "/payment"}>
         {/* <button type="button" onClick={(event) => history.push("/payment")} Buy now > </button> */}
         <Button
-          onClick={(event) => history.push("/payment")}
           variant="contained"
           color="primary"
           className="butt"

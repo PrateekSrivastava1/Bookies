@@ -35,7 +35,7 @@ function Payment() {
     getSecret();
   }, [cart]);
 
-  console.log("this userSecret is =>>>>", userSecret);
+  // console.log("this userSecret is =>>>>", userSecret);
 
   const payment = async (event) => {
     event.preventDefault();
