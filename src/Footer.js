@@ -15,17 +15,19 @@ const Footer = () => {
       <div className="content">
         <div className="left box">
           <div className="upper">
-            <div className="topic">About us</div>
+            <div className="topic">About</div>
             <p>
-              Meri ek tang nakli hai...mai hockey ka bahut acha player
-              tha.....ek din Uday bhai ko mere kisi baat par gussa aa gaya
-              unhone meri hi hockey stick se meri tang tod di...par dil ke bahut
-              ache hai turant hospital le gaye....meri nakli tang lagwayi or
-              mujhe ye danda karid ke diya.....
+              Welcome to Bookies, your number one source for all Books. Bookies
+              are dedicated to providing you the best service, with a focus on
+              dependability. Here, you can download any eBooks or Read them for
+              free. <br/> <span> <strong><em>Note: Don't buy any Book.</em></strong> </span>
+            <br/> <span> <strong>Sincerely, <br/> Prateek Srivastava</strong></span>
+
             </p>
+            
           </div>
           <div className="lower">
-            <div className="topic">Contact us</div>
+            <div className="topic">Developer Contact</div>
             <div className="phone">
               <i className="">
                 <a href="tel:+91 7275769259">
@@ -59,10 +61,10 @@ const Footer = () => {
       <div className="bottom">
         {/* <div className="social"></div> */}
         <a href="https://github.com/prateek-pixels" target="_blank">
-        <Fab variant="extended" className="fab">
-          <StarBorderIcon href="https://github.com/prateek-pixels" />
-          GitHub
-        </Fab>
+          <Fab variant="extended" className="fab">
+            <StarBorderIcon href="https://github.com/prateek-pixels" />
+            GitHub
+          </Fab>
         </a>
         <p>
           Copyright © 2020 <a href="#">Bookies.com</a> All rights reserved

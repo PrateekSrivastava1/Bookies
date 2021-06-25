@@ -1,6 +1,12 @@
 .orders_box{
+    margin-top: 60px;
     padding: 20px 80px;
+    background-color: rgba(237, 239, 241, 0.534);;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0 4px 8px 0 rgba(84, 147, 184, 0.2),
+    0 6px 20px 0 rgba(84, 147, 184, 0.2);
 }
-.orders > h1{
-    margin: 30px 0;
+.orders_box > h1{
+    margin: 30px 17px;
+    /* text-decoration:underline; */
 }

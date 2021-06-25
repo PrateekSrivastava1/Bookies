@@ -31,15 +31,15 @@ function Orders() {
 
   return (
     <>
-    <div className="orders_box" >
-      <h1>  Your Orders </h1>
-      <div className="orderItems">
-          {order?.map(order => (
-              <OrderItems order={order} />
+      <div className="orders_box">
+        <h1> Your Orders: </h1>
+        <div className="orderItems">
+          {order?.map((order) => (
+            <OrderItems order={order} />
           ))}
+        </div>
       </div>
-    </div>
-    <Footer/>
+      <Footer />
     </>
   );
 }

@@ -19,9 +19,6 @@ function FloatingSocialMedia() {
         <a href="https://github.com/prateek-pixels" target="_blank">
           <i className="fab fa-github"></i>
         </a>
-        <a href="https://github.com/prateek-pixels" target="_blank" target="_blank">
-          <i className="fa fa-star"></i>
-        </a>
       </div>
     </div>
   );

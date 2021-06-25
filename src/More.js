@@ -2,8 +2,6 @@ import React from "react";
 import "./Home.css";
 import { Link } from "react-router-dom";
 import Product from "./Product";
-import Carousal from "react-elastic-carousel";
-import Firstwindow from "./Firstwindow";
 import SocialMedia from "./SocialMedia";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle";
@@ -150,6 +148,8 @@ function More() {
               download={"https://htmlcheatsheet.com/js/"}
               image="https://i.ibb.co/Qpmyr6B/js-CHEATSHEAT.png"
               rating={4}
+              hideButton
+
             />
             <Product
               key="13"
@@ -221,6 +221,8 @@ function More() {
                 "https://cheatography.com/davechild/cheat-sheets/javascript/pdf/"
               }
               rating={4}
+              hideButton
+
             />
           </div>
           <div className="home_row">
@@ -232,6 +234,8 @@ function More() {
               download={"https://gto76.github.io/python-cheatsheet/"}
               image="https://i.ibb.co/YQ6Svqw/python-CHEATSHEAT.png"
               rating={4}
+              hideButton
+
             />
             <Product
               key="20"
