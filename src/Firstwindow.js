@@ -21,22 +21,12 @@ const Firstwindow = () => {
           <div className="row mx-auto flex-column">
             <div className="col-10 mx-auto">
               <div className="row d-flex justify-content-center">
-                <div className="col-md-6 pt-5 pt-lg-5 order-2 order-lg-1 d-flex justify-content-center flex-column">
-                  <h1>
+                <div className=" heading1 col-md-6 pt-5 pt-lg-5 order-2 order-lg-1 d-flex justify-content-center flex-column">
+                  <h1 style={{fontSize: '2.1rem'}}>
                     “ Code is like humor. When you have to explain it, it’s
                     bad.”
                   </h1>
-                  {/* <strong className="my-lg brand-name"></strong> */}
                   <h2 className="my-3">– Cory House</h2>
-                  <div className="mt-3">
-                    {/* <NavLink
-                      to="/signup"
-                      type="button"
-                      className="btn btn-outline-primary btn-lg"
-                    >
-                      Sign Up
-                    </NavLink> */}
-                  </div>
                 </div>
                 <div className="col-lg-6  order-1 order-lg-2">
                   <div

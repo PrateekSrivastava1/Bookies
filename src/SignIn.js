@@ -87,7 +87,7 @@ function SignIn() {
                     </div>
                   </div>
                   <div className="form-row">
-                    <div className="col-lg-7">
+                    <div className="col-lg-7 col-sm-5">
                       <button
                         type="button"
                         className="btn btn-outline-primary bttt"

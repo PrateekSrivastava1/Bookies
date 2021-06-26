@@ -77,9 +77,7 @@ function Header() {
                         <div onClick={signout} className="header_option">
                           {/* String name = user.getDisplayName(); */}
                           <PersonIcon className="button" />
-
-                          {!user ? "Hello Buddy!" : "."}
-                          {user ? "Sign Out" : " Sign In?"}
+                          {!user ? "Hello Buddy! Sign In?" : "Sign Out"}
                         </div>
                       </NavLink>
                     </li>
