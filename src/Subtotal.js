@@ -28,7 +28,7 @@ function Subtotal() {
         prefix={"₹"}
       />
       {/* <Link to={(cart.length == 0 && user != null) ? "/payment" : "/signin" }> */}
-      <Link to={(user == null && "/signin") || (cart.length == 0 && user != null) && "/" || (cart.length != 0 && user != null) && "/payment" }>
+      <Link to={((user === null && "/signin")) || ((cart.length === 0 && user !== null) && "/") || ((cart.length !== 0 && user !== null) && "/payment") }>
 
         {/* <button type="button" onClick={(event) => history.push("/payment")} Buy now > </button> */}
         <Button

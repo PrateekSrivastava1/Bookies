@@ -30,7 +30,7 @@ function App() {
   const [{}, setUser] = useStateValue();
   useEffect(() => {
     auth.onAuthStateChanged((authUser) => {
-      console.log("The auth user -> ", authUser);
+      // console.log("The auth user -> ", authUser);
       if (authUser) {
         setUser({
           type: "SET_USER",

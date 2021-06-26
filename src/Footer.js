@@ -63,11 +63,11 @@ const Footer = () => {
         <a href="https://github.com/prateek-pixels" target="_blank">
           <Fab variant="extended" className="fab">
             <StarBorderIcon href="https://github.com/prateek-pixels" />
-            GitHub
+            Star
           </Fab>
         </a>
         <p>
-          Copyright © 2020 <a href="#">Bookies.com</a> All rights reserved
+          Copyright © 2020 <a href="https://clone-b8ccc.web.app/" target="_blank">Bookies</a> All rights reserved
         </p>
       </div>
     </footer>

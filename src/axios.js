@@ -6,7 +6,4 @@ const instance = axios.create({
 export default instance;
 
 
-
-// this is for testing purpose
-//this is for testing purpose2
 // 'http://localhost:5001/clone-b8ccc/us-central1/api'

@@ -24,6 +24,10 @@ function Home() {
   //   });
   // };
 
+  const scroll = () => {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <Firstwindow />
@@ -271,7 +275,7 @@ function Home() {
         </div>
 
         <div className="mr">
-          <Link to="/more">
+          <Link to="/more" onClick={scroll}  >
             <input type="submit" name="" value="More eBooks ⇰" />
           </Link>
         </div>
