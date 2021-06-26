@@ -75,14 +75,14 @@ const Footer = () => {
       </div>
       <div className="bottom">
         {/* <div className="social"></div> */}
-        <a href="https://github.com/prateek-pixels" target="_blank">
+        <a href="https://github.com/prateek-pixels/Bookies" target="_blank">
           <Fab variant="extended" className="fab">
             <StarBorderIcon href="https://github.com/prateek-pixels" />
             Star
           </Fab>
         </a>
         <p>
-          Copyright © {new Date().getFullYear()}{" "}
+          Copyright © {new Date().getFullYear()}
           <a href="https://clone-b8ccc.web.app/" target="_blank">
             Bookies
           </a>{" "}
