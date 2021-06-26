@@ -57,7 +57,7 @@ function Header() {
                         activeClassName="menu_active"
                         exact
                         className="nav-link"
-                        to={"/"}
+                        to="/"
                       >
                         <Badge color="secondary">
                           <HomeIcon className="button" />
