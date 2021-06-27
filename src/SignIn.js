@@ -25,7 +25,7 @@ function SignIn() {
     auth
       .createUserWithEmailAndPassword(email, password)
       .then((auth) => {
-        console.log(auth);
+        // console.log(auth);
         if (auth) {
           history.push("/");
         }
