@@ -17,10 +17,6 @@ const Reducer = (state, action) => {
         cart: [...state.cart, action.item],
       };
     case "REMOVE_FROM_CART":
-      // return {
-      //   ...state,
-      //   cart: state.cart.filter((item) => item.id !== action.id),
-      // };
       const i = state.cart.findIndex((CartItems) => CartItems.id === action.id);
       let newCart = [...state.cart];
       if (i >= 0) {

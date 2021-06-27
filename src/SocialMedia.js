@@ -1,8 +1,5 @@
 import React from "react";
 import "./socialmedia.css";
-import { Link } from "react-router-dom";
-import Fab from "@material-ui/core/Fab";
-import StarBorderIcon from "@material-ui/icons/StarBorder";
 function SocialMedia() {
   return (
     <div className="body">

@@ -22,8 +22,8 @@ function More() {
         <div className="home_container">
           <div className="home_row">
             <Product
-              key="1"
-              id="1"
+              key="23"
+              id="23"
               title="Bash scripting Cheat Sheet"
               price={0}
               download={"https://devhints.io/bash"}
@@ -32,8 +32,8 @@ function More() {
               hideButton
             />
             <Product
-              key="2"
-              id="2"
+              key="24"
+              id="24"
               title="The C Cheat Sheet"
               download={
                 "https://sites.ualberta.ca/~ygu/courses/geoph624/codes/C.CheatSheet.pdf"
@@ -44,8 +44,8 @@ function More() {
               hideButton
             />
             <Product
-              key="3"
-              id="3"
+              key="25"
+              id="25"
               title="Cheat Sheets for Data Scientists"
               price={0}
               download={
@@ -56,8 +56,8 @@ function More() {
               hideButton
             />
             <Product
-              key="4"
-              id="4"
+              key="26"
+              id="26"
               title="GIT CHEAT SHEET"
               price={0}
               download={
@@ -70,8 +70,8 @@ function More() {
           </div>
           <div className="home_row">
             <Product
-              key="6"
-              id="6"
+              key="27"
+              id="27"
               title="CSS Cheat Sheet"
               price={0}
               download={"https://htmlcheatsheet.com/css/"}
@@ -80,8 +80,8 @@ function More() {
               hideButton
             />
             <Product
-              key="7"
-              id="7"
+              key="28"
+              id="28"
               title="A Complete Guide to Flexbox"
               price={0}
               download="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
@@ -90,8 +90,8 @@ function More() {
               hideButton
             />
             <Product
-              key="8"
-              id="8"
+              key="29"
+              id="29"
               title="A Complete Guide to Grid"
               price={0}
               image="https://i.ibb.co/DMgdwMd/CSS-CHEATSHEAT.png"
@@ -104,8 +104,8 @@ function More() {
           </div>
           <div className="home_row">
             <Product
-              key="9"
-              id="9"
+              key="30"
+              id="30"
               title="HTML Cheat Sheet"
               price={0}
               image="https://i.ibb.co/6yGt48X/CHEATSHEAT.png"
@@ -114,8 +114,8 @@ function More() {
               hideButton
             />
             <Product
-              key="10"
-              id="10"
+              key="31"
+              id="31"
               title="Java Cheat Sheet"
               price={0}
               image="https://i.ibb.co/gR1tN0G/java-CHEATSHEAT.png"
@@ -126,8 +126,8 @@ function More() {
               hideButton
             />
             <Product
-              key="11"
-              id="11"
+              key="32"
+              id="32"
               title="JavaScript -Codecademy"
               price={0}
               image="https://i.ibb.co/pZsm5Z2/js-CHEATSHEAT.png"
@@ -141,8 +141,8 @@ function More() {
 
           <div className="home_row">
             <Product
-              key="12"
-              id="12"
+              key="33"
+              id="33"
               title="JavaScript Cheat Sheet"
               price={0}
               download={"https://htmlcheatsheet.com/js/"}
@@ -152,8 +152,8 @@ function More() {
 
             />
             <Product
-              key="13"
-              id="13"
+              key="34"
+              id="34"
               title="JavaScript Regex Cheat Sheet"
               price={0}
               image="https://i.ibb.co/pZsm5Z2/js-CHEATSHEAT.png"
@@ -163,8 +163,8 @@ function More() {
             />
 
             <Product
-              key="14"
-              id="14"
+              key="35"
+              id="35"
               title="JavaScript WorldWide Cheat Sheet - Cheatography (JavaScript)"
               price={0}
               image="https://i.ibb.co/pZsm5Z2/js-CHEATSHEAT.png"
@@ -177,8 +177,8 @@ function More() {
           </div>
           <div className="home_row">
             <Product
-              key="15"
-              id="15"
+              key="36"
+              id="36"
               title="jQuery Cheat Sheet"
               price={0}
               download={"https://htmlcheatsheet.com/jquery/"}
@@ -187,8 +187,8 @@ function More() {
               hideButton
             />
             <Product
-              key="16"
-              id="16"
+              key="37"
+              id="37"
               title="Vue Essential Cheat Sheet -Vue Mastery"
               price={0}
               image="https://i.ibb.co/xq1LP7M/vue-CHEATSHEAT.png"
@@ -200,8 +200,8 @@ function More() {
             />
 
             <Product
-              key="17"
-              id="17"
+              key="38"
+              id="38"
               title="Swift and C# Quick Reference"
               price={0}
               image="https://i.ibb.co/bKYLzbv/swift-CHEATSHEAT.png"
@@ -212,8 +212,8 @@ function More() {
               hideButton
             />
             <Product
-              key="18"
-              id="18"
+              key="39"
+              id="39"
               title="Perl Reference Card"
               price={0}
               image="https://i.ibb.co/xHkYSRn/perl-CHEATSHEAT.png"
@@ -227,8 +227,8 @@ function More() {
           </div>
           <div className="home_row">
             <Product
-              key="19"
-              id="19"
+              key="40"
+              id="40"
               title="Comprehensive Python Cheat Sheet"
               price={0}
               download={"https://gto76.github.io/python-cheatsheet/"}
@@ -238,8 +238,8 @@ function More() {
 
             />
             <Product
-              key="20"
-              id="20"
+              key="41"
+              id="41"
               title="Python WorldWide Cheat Sheet"
               price={0}
               image="https://i.ibb.co/YQ6Svqw/python-CHEATSHEAT.png"
@@ -251,8 +251,8 @@ function More() {
             />
 
             <Product
-              key="21"
-              id="21"
+              key="42"
+              id="42"
               title="Ruby Cheat Sheet"
               price={0}
               image="https://i.ibb.co/7KRgfxK/RUBY-CHEATSHEAT.png"
@@ -263,8 +263,8 @@ function More() {
               hideButton
             />
             <Product
-              key="23"
-              id="23"
+              key="43"
+              id="43"
               title="SQL Cheat Sheet"
               price={0}
               image="https://i.ibb.co/0Q9v4f6/sql-CHEATSHEAT.png"
