@@ -71,9 +71,10 @@ function SignIn() {
                     <div className="col-lg-7">
                       <TextField
                         className="form-control my-3 p-3"
-                        id="standard-basic"
                         // label="With a grid"
-                        id="standard-start-adornment"
+                        id="standard-password-input"
+                        type="password"
+                        autoComplete="current-password"
                         InputProps={{
                           startAdornment: (
                             <InputAdornment position="start">
