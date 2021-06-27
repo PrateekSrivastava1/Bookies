@@ -55,9 +55,12 @@
   padding: 20px;
   justify-content: center;
 }
-
+/* .slide{
+  z-index: 10;
+} */
 .zoomImg {
   z-index: 10;
+
 }
 
 @media screen and (max-width: 700px) {

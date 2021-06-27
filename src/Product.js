@@ -15,6 +15,7 @@ function Product({
   price,
   rating,
   hideButton,
+  hideStars,
 }) {
   const [{ cart }, setCart] = useStateValue();
   const addToCart = () => {
@@ -40,13 +41,15 @@ function Product({
             <strong>₹ </strong>
             <strong>{price}</strong>
           </p>
-          <div className="product_rating">
-            {Array(rating)
-              .fill()
-              .map((_, i) => (
-                <p>⭐</p>
-              ))}
-          </div>
+          {!hideStars && (
+            <div className="product_rating">
+              {Array(rating)
+                .fill()
+                .map((_, i) => (
+                  <p>⭐</p>
+                ))}
+            </div>
+          )}
         </div>
         <img className="image" src={image} alt="" />
         <div>

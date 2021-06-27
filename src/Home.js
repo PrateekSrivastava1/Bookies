@@ -17,12 +17,6 @@ const breakPoints = [
 ];
 
 function Home() {
-  // const trigger = () => {
-  //   const trigger = document.querySelector("menu > .trigger");
-  //   trigger.addEventListener("click", (e) => {
-  //     e.currentTarget.parentElement.classList.toggle("open");
-  //   });
-  // };
 
   const scroll = () => {
     window.scrollTo(0, 0);
@@ -163,6 +157,7 @@ function Home() {
                 image="https://i.ibb.co/5Gkh8m4/striver.png"
                 rating={4}
                 hideButton
+                hideStars
               />
               <Product
                 key="13"
@@ -175,6 +170,7 @@ function Home() {
                 image="https://images-na.ssl-images-amazon.com/images/I/81io-ZZJjEL.jpg"
                 rating={4}
                 hideButton
+                hideStars
               />
               <Product
                 key="14"
@@ -187,6 +183,7 @@ function Home() {
                 image="https://i.ibb.co/CVNtGPS/Aptitude.png"
                 rating={4}
                 hideButton
+                hideStars
               />
               <Product
                 key="15"
@@ -199,6 +196,7 @@ function Home() {
                 }
                 rating={4}
                 hideButton
+                hideStars
               />
               <Product
                 key="16"
@@ -211,6 +209,7 @@ function Home() {
                 image="https://i.ibb.co/D5wfgL1/airbnb.png"
                 rating={4}
                 hideButton
+                hideStars
               />
 
               <Product
@@ -221,6 +220,7 @@ function Home() {
                 download={""}
                 image="https://images-na.ssl-images-amazon.com/images/I/41p1cRZGtaL._SX348_BO1,204,203,200_.jpg"
                 rating={5}
+                hideStars
               />
               <Product
                 key="18"
@@ -230,6 +230,7 @@ function Home() {
                 download={""}
                 image="https://images-na.ssl-images-amazon.com/images/I/51aQBb0WR+L._SX331_BO1,204,203,200_.jpg"
                 rating={4}
+                hideStars
               />
               <Product
                 key="19"

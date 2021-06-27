@@ -59,9 +59,9 @@ function Header() {
                         className="nav-link"
                         to="/"
                       >
-                        <Badge color="secondary">
+                        <Badge color="secondary"  >
                           <HomeIcon className="button" />
-                          Home
+                          HOME
                         </Badge>
                       </NavLink>
                     </li>
@@ -77,7 +77,7 @@ function Header() {
                         <div onClick={signout} className="header_option">
                           {/* String name = user.getDisplayName(); */}
                           <PersonIcon className="button" />
-                          {!user ? "Hello Buddy! Sign In?" : "Sign Out"}
+                          {!user ? "HELLO BUDDY! SIGN IN?" : "SIGN OUT"}
                         </div>
                       </NavLink>
                     </li>
@@ -91,7 +91,7 @@ function Header() {
                       >
                         <Badge color="secondary">
                           <StoreMallDirectoryRoundedIcon className="button" />
-                          Orders
+                          ORDERS
                         </Badge>
                       </NavLink>
                     </li>
