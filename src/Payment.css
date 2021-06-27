@@ -1,27 +1,46 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.body{
-    padding-top: 100px;
+.body {
+  padding-top: 100px;
 }
-.cont{
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px 0 rgba(84, 147, 184, 0.5),
+.cont {
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(84, 147, 184, 0.5),
     0 6px 20px 0 rgba(84, 147, 184, 0.6);
-    width: 100%;
+  width: 100%;
 }
-.image{
-    /* width: 530px; */
-    width: 100%;
-    object-fit: cover;
+.image {
+  /* width: 530px; */
+  width: 100%;
+  object-fit: cover;
 }
-.row{
-    /* background: white; */
-    border-radius: 10px;
+.row {
+  /* background: white; */
+  border-radius: 10px;
 }
-.bt{
-    width: 100%;
+.bt {
+  width: 100%;
+}
+@media screen and (max-width: 700px) {
+  .mail {
+    height: 25px;
+    width: 150px;
+    font-size: 1.2rem;
+    overflow-x: scroll;
+    margin-bottom: 15px;
+  }
+  .price {
+    height: 25px;
+    width: 300px;
+    font-size: 1.2rem;
+    overflow-y: scroll;
+    /* padding-top: 25px; */
+  }
+  .form-row{
+      padding: 5px;
+  }
 }

@@ -76,12 +76,11 @@ function Payment() {
 
   return (
     <>
-    
       {/* Stripe payment png: https://i.ibb.co/VTLQdYT/stripe.png */}
       {/* payment png: https://i.ibb.co/gDmsyg1/patment.png */}
 
       <div className="body">
-        <section className="Form my-4 mx-5">
+        <section className="Form my-3 mx-5 mx-md-3">
           <div className="container cont">
             <div className="row no-gutters ">
               <div className="col-lg-5 ">
@@ -92,32 +91,33 @@ function Payment() {
                 />
               </div>
               <div className="col-lg-7 px-5">
-                <h4 className="font-weight-bold py-3 .d-sm-flex">User ID:</h4>
-                <span>{user?.email}</span>
+                <p className="font-weight-bold py-3 .d-sm-flex">User ID:</p>
+                <div className="mail">
+                  <span>{user?.email}</span>
+                  <br/>
+                </div>
                 <form className="text-center" onSubmit={payment}>
                   <div className="form-row">
-                    <div className="col-lg-7">
-                      <h4 className=" my-3 p-3">
-                        <CurrencyFormat
-                          renderText={(value) => <h3>Total Price: {value}</h3>}
-                          decimalScale={2}
-                          value={getTotalAmount(cart)}
-                          displayType={"text"}
-                          thousandSeparator={true}
-                          prefix={"₹"}
-                        />
-                      </h4>
+                    <div className="col-lg-7 price">
+                      <CurrencyFormat
+                        renderText={(value) => <span>Total Price: {value}</span> }
+                        decimalScale={2}
+                        value={getTotalAmount(cart)}
+                        displayType={"text"}
+                        thousandSeparator={true}
+                        prefix={"₹"}
+                      />
                     </div>
                   </div>
                   <div className="form-row">
-                    <div className="col-lg-7 col-sm-7" >
+                    <div className="col-lg-7 col-sm-7">
                       <CardElement
                         className="form-control  my-4 p-4"
                         onChange={handleChange}
                       />
                     </div>
                   </div>
-                  <div className="form-row"> 
+                  <div className="form-row">
                     <div className="col-lg-7">
                       <button
                         type="button"

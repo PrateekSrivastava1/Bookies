@@ -10,6 +10,7 @@ src/Card.js
 src/Nav.css
 src/Nav.js
 src/card.css
+src/firebase.js
 
 # testing
 /coverage
