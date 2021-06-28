@@ -23,9 +23,9 @@ A Full-fledge E-commerce web application integrated with stripe payment gateway,
 
 ## Demonstration
 
-[![Bookies]](https://watch.wave.video/60d8e6d946e0fb0001f4539a "For Large Screens")
+[[Bookies]](https://github.com/prateek-pixels/Resources/blob/main/Videos/PC.mp4 "For Large Screens")
 
-[![Bookies]](https://watch.wave.video/60d8eee846e0fb0001f4b68d "For Small Screens")
+[[Bookies]](https://github.com/prateek-pixels/Resources/blob/main/Videos/mobile%20bookies.mp4 "For Small Screens")
 
 
 ### Use it here [Bookies](https://clone-b8ccc.web.app/  "Bookies WebApp") 
