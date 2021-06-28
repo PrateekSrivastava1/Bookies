@@ -94,13 +94,15 @@ function Payment() {
                 <p className="font-weight-bold py-3 .d-sm-flex">User ID:</p>
                 <div className="mail">
                   <span>{user?.email}</span>
-                  <br/>
+                  <br />
                 </div>
                 <form className="text-center" onSubmit={payment}>
                   <div className="form-row">
                     <div className="col-lg-7 price">
                       <CurrencyFormat
-                        renderText={(value) => <span>Total Price: {value}</span> }
+                        renderText={(value) => (
+                          <span>Total Price: {value}</span>
+                        )}
                         decimalScale={2}
                         value={getTotalAmount(cart)}
                         displayType={"text"}
@@ -122,7 +124,8 @@ function Payment() {
                       <button
                         type="button"
                         className="btn btn-outline-primary btn-lg bt mb-5"
-                        disabled={processing || disabled || enabled}
+                        // disabled={processing || disabled || enabled}
+                        disabled={disabled}
                       >
                         <span>
                           {processing ? <p>Processing</p> : "Buy now"}
