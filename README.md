@@ -1,3 +1,7 @@
+
+
+https://user-images.githubusercontent.com/65366517/123589910-94ef1800-d807-11eb-9149-be25586f9f3c.mp4
+
 # Bookies [:blue_book:]("#" ":blue_book:")
 
 ## About
@@ -23,9 +27,11 @@ A Full-fledged E-commerce web application integrated with stripe payment gateway
 
 ## Demonstration
 
-[[Bookies]](https://github.com/prateek-pixels/Resources/blob/main/Videos/PC.mp4 "For Large Screens")
+[Bookies](https://user-images.githubusercontent.com/65366517/123590408-3a09f080-d808-11eb-9003-fde6cd62a179.mp4
+ "For Large Screens")
 
-[[Bookies]](https://github.com/prateek-pixels/Resources/blob/main/Videos/mobile%20bookies.mp4 "For Small Screens")
+
+[Bookies](https://github.com/prateek-pixels/Resources/blob/main/Videos/mobile%20bookies.mp4 "For Small Screens")
 
 
 ### Use it here [Bookies](https://clone-b8ccc.web.app/  "Bookies WebApp") 
