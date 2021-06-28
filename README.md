@@ -20,10 +20,11 @@ A Full-fledged E-commerce web application integrated with stripe payment gateway
 | Sub Total                  | &#10004; | Ability to show the subtotal of cart items                    |
 | Stripe Payment             | &#10004; | Ability to receive payment directly to an owners bank account |
 | Social Media               | &#10004; | Ability to move to Developer social media accounts            |
+| Responsiveness               | &#10004; | Works fine in all screens            |
 
 ## Demonstration
 
-[Bookies](https://user-images.githubusercontent.com/65366517/123590408-3a09f080-d808-11eb-9003-fde6cd62a179.mp4
+[Bookies](https://user-images.githubusercontent.com/65366517/123625065-f70e4400-d82c-11eb-86b7-0d75258614d1.mp4
  "For Large Screens")
 
 
