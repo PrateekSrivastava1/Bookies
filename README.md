@@ -2,7 +2,7 @@
 
 ## About
 
-A Full-fledge E-commerce web application integrated with stripe payment gateway, from where you can buy any eBook, or you can download or read them for free.
+A Full-fledged E-commerce web application integrated with stripe payment gateway, from where you can buy any eBook, or you can download or read them for free.
 
 ## Features
 
@@ -51,7 +51,6 @@ NOTE: DO NOT BUY ANY eBOOK.
 
 ```
 npm install npm@latest -g
-
 ```
 
 ### Installation
@@ -72,9 +71,20 @@ npm install
 ## Contributing
 
 1. Fork the Project
-2. Create your Feature Branch (git checkout -b feature/newFeatures) 
-3. Commit your Changes (git commit -m "Add some newFeatures") 
-4. Push to the Branch (git push origin feature/newFeatures)
+2. Create your Feature Branch 
+```
+git checkout -b feature/newFeatures
+``` 
+
+3. Commit your Changes 
+```
+git commit -m "Add some newFeatures"
+```
+
+4. Push to the Branch 
+```
+git push origin feature/newFeatures
+```
 5. Open a Pull Request
 
 My favourite Quote
