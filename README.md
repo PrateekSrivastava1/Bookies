@@ -2,7 +2,7 @@
 
 ## About
 
-A Full-fledged E-commerce web application integrated with stripe payment gateway, from where you can buy any eBook, or you can download or read them for free.
+A Fully-fledged E-commerce web application integrated with stripe payment gateway from where You can buy or download eBooks, You also have the option to read the free ebooks right there in the app.
 
 ## Features
 
