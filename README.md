@@ -2,7 +2,9 @@
 
 ## About
 
-A Fully-fledged E-commerce web application integrated with stripe payment gateway from where You can buy or download eBooks, You also have the option to read the free ebooks right there in the app.
+A Full-fledged E-commerce web application integrated with stripe payment gateway, from where you can buy any eBook, or you can download or read them for free.
+
+I have made this application for self learners, so that the can save their money and also save their time to find resources.
 
 ## Features
 
@@ -10,6 +12,8 @@ A Fully-fledged E-commerce web application integrated with stripe payment gatewa
 
 | Feature                    |  Coded?  | Description                                                   |
 | -------------------------- | :------: | :------------------------------------------------------------ |
+| Download eBooks            | &#10004; | Ability to to download eBooks for free                        |
+| Read eBooks                | &#10004; | Ability to read eBooks on the app for free                    |
 | Sign Up                    | &#10004; | Ability to Create a new account                               |
 | Log In                     | &#10004; | Ability to Log In                                             |
 | Log Out                    | &#10004; | Ability to Log Out                                            |
@@ -20,21 +24,16 @@ A Fully-fledged E-commerce web application integrated with stripe payment gatewa
 | Sub Total                  | &#10004; | Ability to show the subtotal of cart items                    |
 | Stripe Payment             | &#10004; | Ability to receive payment directly to an owners bank account |
 | Social Media               | &#10004; | Ability to move to Developer social media accounts            |
-| Responsiveness               | &#10004; | Works fine in all screens            |
 
 ## Demonstration
 
-[Bookies](https://user-images.githubusercontent.com/65366517/123625065-f70e4400-d82c-11eb-86b7-0d75258614d1.mp4
- "For Large Screens")
+[Bookies](https://user-images.githubusercontent.com/65366517/123590408-3a09f080-d808-11eb-9003-fde6cd62a179.mp4 "For Large Screens")
 
+[Bookies](https://user-images.githubusercontent.com/65366517/123589910-94ef1800-d807-11eb-9149-be25586f9f3c.mp4 "For Small Screens")
 
-[Bookies](https://user-images.githubusercontent.com/65366517/123589910-94ef1800-d807-11eb-9149-be25586f9f3c.mp4
- "For Small Screens")
+### Use it here [Bookies](https://clone-b8ccc.web.app/ "Bookies WebApp")
 
-
-### Use it here [Bookies](https://clone-b8ccc.web.app/  "Bookies WebApp") 
 NOTE: DO NOT BUY ANY eBOOK.
-
 
 ## Built With
 
@@ -59,38 +58,44 @@ npm install npm@latest -g
 
 ### Installation
 
-1. Create new project on FIREBASE 
+1. Create new project on FIREBASE
 2. Get free API key from Stripe
 3. Clone the repo
+
 ```
 https://github.com/prateek-pixels/Bookies.git
 ```
 
-4. Install NPM packages in _hosting and functions as well_  
+4. Install NPM packages in _hosting and functions as well_
 
 ```
 npm install
-``` 
+```
 
 ## Contributing
 
 1. Fork the Project
-2. Create your Feature Branch 
+2. Create your Feature Branch
+
 ```
 git checkout -b feature/newFeatures
-``` 
+```
 
-3. Commit your Changes 
+3. Commit your Changes
+
 ```
 git commit -m "Add some newFeatures"
 ```
 
-4. Push to the Branch 
+4. Push to the Branch
+
 ```
 git push origin feature/newFeatures
 ```
+
 5. Open a Pull Request
 
 My favourite Quote
+
 > Those who cannot remember the past are condemned to repeat it.
 > ~ George Santayana.
