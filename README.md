@@ -27,6 +27,8 @@ I have made this application for self learners, so that the can save their money
 
 ## Demonstration
 
+<img width="1512" alt="Screenshot 2023-11-23 at 3 58 26 PM" src="https://github.com/PrateekSrivastava1/Bookies/assets/65366517/0638be17-7986-4811-82b4-ed4139ee6634">
+
 [Bookies](https://user-images.githubusercontent.com/65366517/123590408-3a09f080-d808-11eb-9003-fde6cd62a179.mp4 "For Large Screens")
 
 [Bookies](https://user-images.githubusercontent.com/65366517/123589910-94ef1800-d807-11eb-9149-be25586f9f3c.mp4 "For Small Screens")
